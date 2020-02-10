@@ -1,147 +1,46 @@
-/*-- ESTILOS GENERALES --*/
-body {
-    font-family: fantasy;
-    font-size: 20px;
-}
+/*--CSS contenido index.html--*/
 
-ul{
-    padding: 0px;
-    list-style: none;
-}
-
-/*--HEADER--*/
-
-header {
-    background-color: #5499c7;
-    width:auto;
-    max-width: 1920px;
-}
-
-header div {
+.content {
     display:inline-flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    padding:20px;
-}
-
-
-header li {
-    padding:12px;
-}
-
-header img {
-    width:20%;
-}
-.logo {
-    width:400px;
-}
-
-/*---Barra de búsqueda---*/
-.busqueda input {
-    padding: 10px;
-    border-radius: 6px;
-}
-
-div .texto {
-    width:320px;
-}
-
-.search {
-    background-image: url("file:///d:/Users/Antonio/Desktop/Tienda/ASSETS/MULTIMEDIA/IMAGENES/lupa3.png");
-    background-repeat: no-repeat;
-    background-size: 50px;
-    background-color: #154360;
-    color:white;
-    font-weight: bold;
-    width:110px;
-    transition: 1s;   
-}
-
-.search:hover {
-    background-color:white;
-    color: #154360;
-    border:2px solid  #154360;
-    transition: 1s;
-    cursor: pointer;
-}
-
-/*--------------------*/
-
-div.acceso, div.carrito {
-    width: 420px;
-    flex-direction: column;
-}
-
-div.acceso, div.carrito {
-   text-align: center;    
-}
-
-div.acceso img, div.carrito img{
-    margin:auto;
-}
-
-/*--NAV/MENU--*/
-
-nav{
-    background-color: #154360 ;
-}
-
-nav ul {
-    width:100%;
-    height: auto;
-    display: inline-flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-}
-
-nav ul li {
-    padding:0em 5em;
-}
-
-nav a {
-    text-decoration: none;
-    color:white;
-}
-
-/*--FOOTER--*/
-
-footer {
-    background-color: #b3babe;
     width: auto;
     max-width: 1920px;
+    height: 800px;
+    margin:20px 50px;
 }
 
-footer a {
-    text-decoration: none;
-    color: black;
+main {
+    width:80%;
+    margin:10px;
 }
 
-footer div {
-    display: inline-block;
-    width:28%;
-    height: auto;
-    padding:20px;
-    text-align: center;
+aside {
+    float: right;
+    width: 15%;
+    max-width: 920px;
+    height: 600px;
+    max-height: 900px;
+    border:2px solid black;
 }
 
-footer .info-pagina {
+aside div {
+    margin:20px;
+    margin-top:50px;
+}
+
+aside img {
+    float:left;
+    width: 50px;
+    margin-right:15px;
+}
+
+aside h3 {
+    float:inline-end
+    padding:10px;
+    font-weight: bold;
+}
+
+aside p {
+    padding:10px;
     text-align: justify;
-    margin-left: 60px;
-}
-
-.social, .info-pago {
-    border-left: 2px solid black;
-}
-
-div.social li, div.info-pago li {
-    display:inline-flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-.social img, .info-pago img {
-    width:4em;
-    padding: 0px 20px;
+    
 }

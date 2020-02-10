@@ -1,85 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Página de pruebas</title>
     <style type="text/css">
-ul#menu-horizontal li {
-float:left;
-display: inline;
-position: relative;
-}
-ul#menu-horizontal ul {
-display: none;
-position: relative;
-top: 24;
-left:0;
-margin:0;
-padding:0;
-background:#FFFFFF;
-}
-
-ul#menu-horizontal ul li {
-display: block !important;
-}
-
-ul#menu-horizontal li:hover ul{
-display: none;
-}
-
-ul#menu-horizontal li:hover ul{
-display: block;
-}
-#menu-horizontal {
-width:500px;
-margin:0 auto;
-}
-
-#menu-horizontal li {
-margin:0 1px;
-width:98px;
-min-height:19px;
-text-align:center;
-background:#BBB;
-list-style:none;
-padding:2px 0;
-}
-
-/* y otro poquito por aquí.. */
-
-#menu-horizontal li:hover {
-background:#C5014F;
-}
-
-#menu-horizontal li a {
-font:bold 11px Arial, Helvetica, sans-serif;
-color:#FFF;
-text-decoration:none;
-}
-
-#menu-horizontal li ul li{
-float:none;
-width:98px;
-margin:1px 0;
-}
+        #propiedades {
+        height: 100px;
+        width: 100px;
+        background-color: #ff0000;
+        transition-property: background-color, border-radius;
+        transition-duration: 3s;
+        }
+        #propiedades:hover {
+        background-color: #0000ff;
+        border-radius: 75px;
+        }
+        
     </style>
 </head>
 
 <body>
-    <ul id="menu-horizontal">
-        <li><a href="#" title="Texto">Texto</a></li>
-        <li><a href="#" title="Texto">Texto</a></li>
-        <li><a href="#" title="Texto">Texto</a>
-            <ul>
-                <li><a href="#" title="Texto">Texto</a></li>
-                <li><a href="#" title="Texto">Texto</a></li>
-            </ul>
-        </li>
-        <li><a href="#" title="Texto">Texto</a></li>
-        <li><a href="#" title="Texto">Texto</a></li>
-    </ul>
+    <div id="propiedades"></div>
+
+
 </body>
 
 </html>
