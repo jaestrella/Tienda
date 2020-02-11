@@ -25,17 +25,27 @@ header div {
     padding: 20px;
 }
 
+header div {
+    position: relative;
+    left:50px;
+    bottom:70px;
+}
+
 
 header li {
     padding: 12px;
 }
 
-header img {
+header .acceso img, header .carrito img{
     width: 20%;
 }
 
 .logo {
-    width: 400px;
+    width: 200px;
+    height:auto;
+    margin-left:20px;
+    position: relative;
+    top:95px;
 }
 
 /*---Barra de búsqueda---*/
