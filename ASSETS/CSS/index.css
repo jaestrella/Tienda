@@ -1,16 +1,16 @@
 /*--CSS contenido index.html--*/
 
 .content {
-    display:inline-flex;
+    display: inline-flex;
     width: auto;
     max-width: 1920px;
     height: 800px;
-    margin:20px 50px;
+    margin: 20px 50px;
 }
 
 main {
-    width:80%;
-    margin:10px;
+    width: 80%;
+    margin: 10px;
 }
 
 aside {
@@ -19,27 +19,31 @@ aside {
     max-width: 920px;
     height: 600px;
     max-height: 900px;
-    border:2px solid black;
+    border: 2px solid black;
 }
 
 aside div {
-    margin:20px;
-    margin-top:50px;
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-right: 0px;
+    margin-bottom: 20px;
+    position: relative;
+    top: 20px;
 }
 
 aside img {
-    float:left;
+    float: left;
     width: 50px;
-    margin-right:15px;
+    margin-right: 15px;
 }
 
 aside h3 {
-    padding:10px;
+    padding: 0px;
     font-weight: bold;
 }
 
 aside p {
-    padding:10px;
+    padding: 10px;
     text-align: justify;
-    
+
 }
