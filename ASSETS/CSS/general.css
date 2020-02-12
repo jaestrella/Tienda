@@ -1,7 +1,7 @@
 /*-- ESTILOS GENERALES de todas páginas--*/
 body {
     font-family: Arial, fantasy;
-    font-size: 20px;
+    font-size: 2em;
 }
 
 ul {
@@ -13,8 +13,8 @@ ul {
 
 header {
     background-color: #5499c7;
-    width: auto;
-    max-width: 1920px;
+    width: 100%;
+    max-width: 100%;
 }
 
 header div {
@@ -214,8 +214,8 @@ div.carrito a {
 
 footer {
     background-color: #b3babe;
-    width: auto;
-    max-width: 1920px;
+    width: 100%;
+    max-width: 100%;
 }
 
 footer a {
