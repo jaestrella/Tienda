@@ -1,0 +1,96 @@
+/*Media queries - Estilo para móviles*/
+    body {
+        font-size:1.2em;
+    }
+
+    /*HEADER*/
+    header div {
+        display: block;
+        padding: 35px;
+    }
+    .div-logo {
+        width: 100%;
+        margin-left: 24%;
+    }
+
+    .busqueda input {
+        padding: 10px;
+        border-radius: 6px;
+        margin-left:16%;
+        margin-top:5px;
+    }
+
+    div .texto {
+        width: 420px;
+    }
+    div.acceso,
+    div.carrito {
+        width: 20%;
+        display: inline-block;
+        text-align: center;
+        margin: 20px 85px;
+        padding: 10px;
+        border-radius: 6px;
+        background-color: #154360;
+    }
+    .acceso img,
+    .carrito img {
+        width: 60%;
+    }
+    div.acceso a,
+    div.carrito a {
+        width:100%;
+    }
+    .acceso a:hover,
+    .carrito a:hover {
+        color: #154360;
+        background-color:#5499c7;
+        transition:2s;
+    }
+
+    /*NAV MENU*/
+    .menu {
+        
+    }
+
+    .menu ul li{
+        
+    }
+    /*FOOTER*/
+    
+
+
+    /* Resto del contenido de la página: */
+	.content {
+        max-width: 720px;
+        display: block;
+	}
+    main {
+        width:80%;
+        margin: 10px 30px;
+    }
+    
+    /* MAIN - IMAGENES FUNKOS */
+    .ventas img, .novedades img, .ofertas img {
+        width:75%;
+        margin: 5px 10px;
+    }
+
+
+    /*ASIDE - Comentarios*/
+    aside {
+        float: none;
+        width: 80%;
+        margin: 0px 30px;
+        height: auto;
+        border: 2px solid black;
+    }
+    
+    aside div {
+        margin-top: 0px;
+        margin-left: 30px;
+        margin-right: 0px;
+        margin-bottom: 20px;
+        position: relative;
+        top: 20px;
+    }

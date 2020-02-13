@@ -4,18 +4,19 @@
     display: inline-flex;
     width: 100%;
     max-width: 100%;
-    margin: 20px 50px;
+    margin: 20px 40px;
 }
 
 main {
-    width: 80%;
+    width: 77%;
     margin: 10px;
+    text-align: center;
 }
 
 aside {
     float: right;
-    width: 20%;
-    max-width: 920px;
+    width: 18%;
+    max-width: 600px;
     height: 600px;
     max-height: 900px;
     border: 2px solid black;
@@ -47,10 +48,20 @@ aside p {
 
 }
 
-/* MAIN IMAGENES */
+/* MAIN IMAGENES FUNKOS */
 .ventas img, .novedades img, .ofertas img {
     width:30%;
+    margin: 5px 10px;
 }
+
+.ventas img:hover, .novedades img:hover, .ofertas img:hover {
+    -webkit-box-shadow: 0px 10px 30px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 10px 30px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 10px 30px 0px rgba(0,0,0,0.75);
+    transition: 1s;
+    cursor: pointer;
+}
+
 
 .ventas h2, .novedades h2, .ofertas h2 {
     text-align: center;
