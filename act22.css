@@ -1,0 +1,156 @@
+/*CSS de act22.html*/
+/*ESTILOS PARA EL FORMULARIO DE LA ACTIVIDAD 22*/
+
+/*A todos los elementos les damos una fuente mejor que la predefinida*/
+body{
+    font-family: Arial, Helvetica, sans-serif ;
+}
+
+/*Fuera del formulario*/
+h2 {
+    font-size:1.8em;
+    margin-left: 10%;
+}
+
+/*----------------TODOS LOS ESTILOS DEL FORMULARIO-------------*/
+
+form{
+    margin-top:1rem;
+    margin-left:10%;
+    margin-right:10%;
+    width:80%;
+}
+
+/*Listas sin punto para indicar el comienzo*/
+ul {
+    list-style-type: none;
+}
+
+/*Titulos principales de la clase "titulo", de label, en negrita*/
+label.titulo{
+    font-weight: bold;
+}
+
+/*Asterisco en rojo para los campos requeridos*/
+.requerido {
+    color:red;
+    font-size:1.6em;
+}
+
+/*Bordes encima y debajo de cada lista*/
+
+li.izquierda,li.derecha {
+    border-top: 2px solid  ;
+    border-bottom:2px solid ;
+}
+
+/*------Ocultar y mostrar texto de ayuda a la derecha de cada apartado--------*/
+.ayuda {
+    visibility:hidden;
+    width:25%;
+    position:relative;
+    left:75%;
+}
+
+li.derecha:hover .ayuda, li.izquierda:hover .ayuda{
+    visibility:initial;
+}
+
+/*Tamaño por defecto, campos normales:*/
+#nombre, #municipio, #pais,#telefonofijo, #telefonomovil {
+    width:160px;
+}
+
+/*Aumento el tamaño de algunos campos:*/
+.izquierda #apellido1, .izquierda #apellido2, .izquierda #email, .derecha #direccion{    
+    width:320px;
+}
+
+/*Tamaño más reducido para otros campos:*/
+#provincia, #codigopostal {
+    width: 100px;
+}
+
+/*-----Señalar la zona por la que pasa el cursor-----*/
+.izquierda:hover, .derecha:hover{
+    background-color: #FF9;
+}
+
+/*Remarcar colores campos*/
+#nombre:hover, #apellido1:hover, #apellido2:hover, #direccion:hover, #codigopostal:hover, #municipio:hover, #provincia:hover, #pais:hover, #email:hover, #telefonofijo:hover, #telefonomovil:hover {
+    border:2px solid #E6B700;
+}
+
+#nombre:focus, #apellido1:focus, #apellido2:focus, #direccion:focus, #codigopostal:focus, #municipio:focus, #provincia:focus, #pais:focus, #email:focus, #telefonofijo:focus, #telefonomovil:focus {
+    border:2px solid #E6B700;
+}
+
+/*Botón de enviar situado abajo a la derecah*/
+.botones {
+    text-align: right;
+}
+
+/*-----------COLOCAR CAMPOS DEL FORMULARIO----------------*/
+
+.izquierda, .derecha {
+    width:100%;
+}
+
+.titulo {
+    float:left;
+    width:120px;
+    padding-left:10px;
+}
+
+.derecha div, .izquierda div {
+	float: left;
+}
+
+div:nth-child(3){
+    height:250px;
+}
+
+.izquierda input,.derecha input{
+    display:block;
+}
+
+.derecha select{
+    display:block;
+}
+
+label, input{
+    margin-top:15px;
+}
+
+.tercio {
+    float:left;
+    position: relative;
+    top:15px;
+    padding: 10px;
+}
+
+.dostercios {
+    clear:both;
+    float:right;
+    position: relative;
+    bottom: 60px;
+    padding: 10px;
+}
+
+/* Solo para: Teléfono*/
+
+.derecha .mitad{
+    display:inline-block;
+    padding:10px;
+}
+
+span.mitad{
+    margin-top:10px;
+}
+
+span.mitad:nth-child(2){
+    margin-left:100px;
+}
+
+
+/*-----------------------FIN---------------------------*/
