@@ -10,7 +10,7 @@
 main {
     width: 77%;
     margin: 10px;
-    text-align: center;
+    
 }
 
 aside {
@@ -49,6 +49,9 @@ aside p {
 }
 
 /* MAIN IMAGENES FUNKOS */
+.ventas, .novedades, .ofertas {
+text-align: center;
+}
 .ventas img, .novedades img, .ofertas img {
     width:30%;
     margin: 5px 10px;

@@ -1,4 +1,5 @@
-<html>
+<!DOCTYPE html>
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -12,84 +13,146 @@
     <meta http-equiv="expires" content="Sun, 01 March 2020 00:00:00 GMT" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Registro - FunkoShop</title>
+    <title>Inicio - FunkoShop</title>
     <link rel="stylesheet" type="text/css" href="ASSETS/CSS/reset.css">
     <link rel="stylesheet" type="text/css" href="ASSETS/CSS/general.css">
+    <link rel="stylesheet" type="text/css" href="ASSETS/CSS/index.css">
     <link rel="stylesheet" type="text/css" href="ASSETS/CSS/registro.css">
+    <link rel="stylesheet" type="text/css" media="(min-width: 320px) and (max-width:720px)"
+        href="ASSETS/CSS/media_queries/mobile.css">
 </head>
 
 <body>
-    <main>
-        <section>
-            <form action="#" method="POST">
-                <fieldset>
-                    <legend>Registro en FunkoShop</legend>
-                    <table>
-                        <tr>
-                            <td>
-                                <label for="nombre">NOMBRE</label>
-                                <input id="nombre" name="nombre" value="" />
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <label for="apellidos">APELLIDOS</label>
-                                <input id="apellidos" name="apellidos" value="" />
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <label for="correo">CORREO</label>
-                                <input id="correo" name="correo" type="email" value="" />
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <label for="nacimiento">FECHA DE NACIMIENTO</label>
-                                <input id="nacimiento" name="nacimiento" type="date" value="" />
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <label for="direccion">DIRECCION</label>
-                                <input id="direccion" name="direccion" value="" />
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <label for="provincia">PROVINCIA</label>
-                                <input id="provincia" name="provincia" value="" />
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <label for="localidad">LOCALIDAD</label>
-                                <input id="localidad" name="localidad" value="" />
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <label for="cp">CÓDIGO POSTAL</label>
-                                <input id="cp" name="cp" type="number" min="1" max="3001" value="" />
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input id="politica" name="politica" type="checkbox" value="" />
-                                <label for="politica">Acepto las políticas de la empresa</label>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input id="enviar" name="enivar" type="button" value="Enviar" />
-                                <input id="cancelar" name="cancelar" type="reset" value="Cancelar" />
-                            </td>
-                        </tr>
-                    </table>
-                </fieldset>
+    <header>
+        <div class="div-logo">
+            <img src="ASSETS\MULTIMEDIA\IMAGENES\LOGO\logo_tienda_negro_redim.svg" class="logo" alt="Logo">
+        </div>
+        <div class="busqueda">
+            <form action="">
+                <input type="text" placeholder="Busqueda sobre funkos..." class="texto" />
+                <input type="button" name="buscar" value="     Buscar" class="search" />
             </form>
-        </section>
-    </main>
-</body>
+        </div>
+        <div class="acceso" id="propiedades">
+            <a href="acceso.html">
+                <img src="ASSETS\MULTIMEDIA\IMAGENES\acceso.png" alt="Acceso" />
+            </a>
+        </div>
+
+        <div class="carrito" id="propiedades">
+            <a href="carrito.html">
+                <img src="ASSETS\MULTIMEDIA\IMAGENES\carro-de-la-compra.png" alt="Carrito" />
+            </a>
+        </div>
+
+        <nav class="menu" id="menu">
+            <ul>
+                <li><a href="categorias.html" target="_blank" rel="noopener noreferrer">CATEGORIAS</a>
+                    <ul>
+                        <li><a href="marvel.html" target="_blank" rel="noopener noreferrer">MARVEL</a>
+                            <ul>
+                                <li><a href="productos.html" target="_blank" rel="noopener noreferrer">FUNKO 1</a></li>
+                                <li><a href="productos.html" target="_blank" rel="noopener noreferrer">FUNKO 2</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="dc.html" target="_blank" rel="noopener noreferrer">DC</a></li>
+                        <li><a href="juego-tronos.html" target="_blank" rel="noopener noreferrer">JUEGO DE TRONOS</a>
+                        </li>
+                        <li><a href="dragon-ball.html" target="_blank" rel="noopener noreferrer">DRAGON BALL</a></li>
+                    </ul>
+                </li>
+                <li><a href="categorias.html" target="_blank" rel="noopener noreferrer">TOP VENTAS</a></li>
+                <li><a href="productos.html" target="_blank" rel="noopener noreferrer">NOVEDADES</a></li>
+                <li><a href="productos.html" target="_blank" rel="noopener noreferrer">OFERTAS</a>
+                    <ul>
+                        <li><a href="juego-tronos.html" target="_blank" rel="noopener noreferrer">JUEGO DE TRONOS</a>
+                            <ul>
+                                <li><a href="productos.html" target="_blank" rel="noopener noreferrer">FUNKO 1</a></li>
+                                <li><a href="productos.html" target="_blank" rel="noopener noreferrer">FUNKO 2</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#" target="_blank" rel="noopener noreferrer">EN STOCK</a></li>
+                <li><a href="#" target="_blank" rel="noopener noreferrer">VIP</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <body>
+        <main>
+            <section>
+                <h2>Registro en FunkoShop</h2>
+                <form action="#" method="POST">
+                    <fieldset>
+
+                        <label for="nombre">NOMBRE</label>
+                        <input id="nombre" name="nombre" placeholder="Nombre" />
+
+                        <label for="apellidos">APELLIDOS</label>
+                        <input id="apellidos" name="apellidos" placeholder="Apellidos" />
+
+                        <label for="correo">CORREO</label>
+                        <input id="correo" name="correo" type="email" placeholder="E-mail" />
+
+                        <label for="nacimiento">NACIMIENTO</label>
+                        <input id="nacimiento" name="nacimiento" type="date" placeholder="Fecha Nacimiento" />
+
+                        <label for="direccion">DIRECCION</label>
+                        <input id="direccion" name="direccion" placeholder="Direccion" />
+
+                        <label for="provincia">PROVINCIA</label>
+                        <input id="provincia" name="provincia" placeholder="Provincia" />
+
+                        <label for="localidad">LOCALIDAD</label>
+                        <input id="localidad" name="localidad" placeholder="Localidad" />
+
+                        <label for="cp">CÓDIGO POSTAL</label>
+                        <input id="cp" name="cp" type="number" min="1" max="30001" placeholder="Código postal" />
+
+                        
+                        <label for="politica">Acepto las políticas de la empresa</label>
+                        <input id="politica" name="politica" type="checkbox" value="" />
+
+                        <input id="boton" name="enviar" type="button" value="Enviar" />
+                        <input id="boton" name="cancelar" type="reset" value="Cancelar" />
+                    </fieldset>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <div class="info-pagina">
+                <p>Ayuda e información</p>
+                <ul>
+                    <li>-<a href="politica-privacidad.html" target="_blank" rel="noopener noreferrer">Política de
+                            privacidad</a></li>
+                    <li>-<a href="politica-datos.html" target="_blank" rel="noopener noreferrer">Política de protección
+                            de
+                            datos y condiciones de uso</a></li>
+                    <li>-<a href="contacto.html" target="_blank" rel="noopener noreferrer">Página de contacto</a></li>
+                </ul>
+            </div>
+            <div class="social">
+                <ul>
+                    <li><a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><img
+                                src="ASSETS/MULTIMEDIA/IMAGENES/facebook.png" alt="Facebook"></a></li>
+                    <li><a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><img
+                                src="ASSETS/MULTIMEDIA/IMAGENES/twitter.png" alt="Twitter"></a></li>
+                    <li><a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><img
+                                src="ASSETS/MULTIMEDIA/IMAGENES/instagram.png" alt="Instagram"></a></li>
+                </ul>
+            </div>
+            <div class="info-pago">
+                <ul>
+                    <li><img src="ASSETS/MULTIMEDIA/IMAGENES/tarjeta-mastercard.png" alt="Mastercard"></li>
+                    <li><img src="ASSETS/MULTIMEDIA/IMAGENES/visa.png" alt="Visa"></li>
+                    <li><img src="ASSETS/MULTIMEDIA/IMAGENES/paypal.png" alt="Paypal"></li>
+                </ul>
+            </div>
+            <div class="copyright">
+                <p>2020 © The FunkoShop SL. Creada por estudiantes de 2º DAW.</p>
+            </div>
+        </footer>
+    </body>
 
 </html>

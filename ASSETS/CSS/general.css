@@ -218,7 +218,6 @@ div.carrito a {
 footer {
     background-color: #b3babe;
     width: 100%;
-    max-width: 100%;
     display:block;
 }
 
@@ -277,4 +276,3 @@ div.info-pago li {
     font-size: 16px;
     margin-top:0px;
 }
-
