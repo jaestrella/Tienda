@@ -16,7 +16,7 @@ header {
     width: 100%;
     max-width: 100%;
     height: auto;
-    position:fixed;
+    /*position:fixed;*/
     z-index:99;
 }
 
