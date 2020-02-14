@@ -1,0 +1,86 @@
+main{
+    width: 100%;
+}
+section{
+    width: 50%;
+    margin:auto;
+}
+
+section form{
+    margin: 0 auto;
+    width:100%;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    border-radius: 7px;
+    background-color: rgba(10,60,70,0.7);
+    box-sizing:border-box;
+    margin-top:20px;
+    text-align: left;
+   }
+
+   section input:not(#politica){
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing:border-box;
+    font-size: 17px;
+    border: none;
+   }
+   
+   section h2{
+    color:black;
+    font-weight: bold;
+    font-size: 40px;
+    display:inline-block;
+    font-family: monospace;
+   }
+   textarea{
+    max-height: 200px;
+    min-height:100px;
+    max-width: 100%;
+   }
+   #boton{
+    background-color: #31384A;
+    color: #fff;
+    padding: 20px;
+    border: none;
+    width: 50%;
+    font-family: monospace;
+    font-weight: bolder;
+    font-size: 1em;
+   }
+   #boton:hover{
+    cursor:pointer;
+   }
+   
+   @media (max-width:720px){
+   
+    label[for="nombre"] {
+        display:none;
+    }
+    label[for="correo"] {
+        display:none;
+    }
+    label[for="asunto"] {
+        display:none;
+    }
+    label[for="mensaje"] {
+        display:none;
+    }
+    
+    
+   
+   }
+
+   @media (min-width:1080px){
+    label[for="cp"]{
+        float:left;
+    }
+    fieldset {
+        width:69%;
+    }
+    input:not(#politica) {
+        width: 50%!important;
+        clear:both;
+    }
+   }
