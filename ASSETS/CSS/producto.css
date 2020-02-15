@@ -1,21 +1,29 @@
 /* CSS para la página de cada producto */
 
+.padre {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    margin: 20px 40px;
+    display:block;
+}
+
 main {
-    width: 73%;
-    margin: 2%;
-    
+    width: 80%;
+    margin: 0 12%;
+    height:70vh;
 }
 
 /* PRODUCTO */
 
 .imagenes {
     border:2px solid black;
-    width:50%;
+    width:30%;
     float:left;
 }
 
 .imagenes img {
-    width: 75%;
+    width: 70%;
     margin-left: 10%;
 }
 
@@ -74,21 +82,12 @@ main {
 
 
 aside {
-    float: right;
-    width: 18%;
-    max-width: 600px;
-    height: 600px;
-    max-height: 900px;
+    float: none;
+    width: 80%;
+    max-width: 1000px;
+    max-height: 1000px;
     border: 2px solid black;
-}
-
-aside div {
-    margin-top: 50px;
-    margin-left: 20px;
-    margin-right: 0px;
-    margin-bottom: 20px;
-    position: relative;
-    top: 20px;
+    margin:0 20%;
 }
 
 aside img {

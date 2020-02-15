@@ -1,7 +1,10 @@
 /*-- ESTILOS GENERALES de todas páginas--*/
 body {
+    margin:0;
+    padding:0;
     font-family: Arial, fantasy;
     font-size: 1.5em;
+    box-sizing: border-box;
 }
 
 ul {
