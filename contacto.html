@@ -1,28 +1,74 @@
 <!DOCTYPE html>
 <html lang="es">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="description"
-            content="Tienda web para venta de Funkos. Realizada como trabajo para 2º CFGS DAW IES Virgen del Carmen" />
-        <meta name="keywords" content="funko, marvel, juego de tronos, got, dc, dragon ball, comic, merchandising" />
-        <meta name="author"
-            content="Jesús Escabias Martínez, José Antonio Estrella Fernández y Antonio Rodríguez González" />
-        <meta name="copyright"
-            content="Jesús Escabias Martínez, José Antonio Estrella Fernández y Antonio Rodríguez González" />
-        <meta http-equiv="expires" content="Sun, 01 March 2020 00:00:00 GMT" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Inicio - FunkoShop</title>
-        <link rel="stylesheet" type="text/css" href="ASSETS/CSS/reset.css">
-        <link rel="stylesheet" type="text/css" href="ASSETS/CSS/general.css">
-        <link rel="stylesheet" type="text/css" href="ASSETS/CSS/index.css">
-        <link rel="stylesheet" type="text/css" href="ASSETS/CSS/contacto.css">
-        <link rel="stylesheet" type="text/css" media="(min-width: 320px) and (max-width:720px)"
-            href="ASSETS/CSS/media_queries/mobile.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="description"
+        content="Tienda web para venta de Funkos. Realizada como trabajo para 2º CFGS DAW IES Virgen del Carmen" />
+    <meta name="keywords" content="funko, marvel, juego de tronos, got, dc, dragon ball, comic, merchandising" />
+    <meta name="author"
+        content="Jesús Escabias Martínez, José Antonio Estrella Fernández y Antonio Rodríguez González" />
+    <meta name="copyright"
+        content="Jesús Escabias Martínez, José Antonio Estrella Fernández y Antonio Rodríguez González" />
+    <meta http-equiv="expires" content="Sun, 01 March 2020 00:00:00 GMT" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Inicio - FunkoShop</title>
+    <link rel="stylesheet" type="text/css" href="ASSETS/CSS/reset.css">
+    <link rel="stylesheet" type="text/css" href="ASSETS/CSS/general.css">
+    <link rel="stylesheet" type="text/css" href="ASSETS/CSS/index.css">
+    <link rel="stylesheet" type="text/css" href="ASSETS/CSS/contacto.css">
+    <link rel="stylesheet" type="text/css" href="ASSETS/CSS/media_queries/mobile_general.css">
+    <!--link rel="stylesheet" type="text/css" href="ASSETS/CSS/media_queries/mobile_contacto.css"-->
+</head>
 
-    <body>
+<body>
+    <div class="contenedor">
+        <header>
+            <div class="div-logo">
+                <a href="index.html"><img src="ASSETS\MULTIMEDIA\IMAGENES\LOGO\logo_tienda_negro_redim.svg" class="logo"
+                        alt="Logo"></a>
+            </div>
+            <div class="busqueda">
+                <form action="">
+                    <input type="text" placeholder="Busqueda sobre funkos..." class="texto" />
+                    <input type="button" name="buscar" value="     Buscar" class="search" />
+                </form>
+            </div>
+            <div class="acceso" id="propiedades">
+                <a href="#">
+                    <img src="ASSETS\MULTIMEDIA\IMAGENES\acceso.png" width="150px" alt="Acceso" />
+                </a>
+            </div>
+
+            <div class="carrito" id="propiedades">
+                <a href="carrito.html">
+                    <img src="ASSETS\MULTIMEDIA\IMAGENES\carro-de-la-compra.png" width="150px" alt="Carrito" />
+                </a>
+            </div>
+
+            <nav class="menu" id="menu">
+                <ul>
+                    <li><a href="categorias.html" target="_blank" rel="noopener noreferrer">CATEGORIAS</a>
+                        <ul>
+                            <li><a href="marvel.html" target="_blank" rel="noopener noreferrer">MARVEL</a></li>
+                            <li><a href="dc.html" target="_blank" rel="noopener noreferrer">DC</a></li>
+                            <li><a href="juego-tronos.html" target="_blank" rel="noopener noreferrer">JUEGO DE
+                                    TRONOS</a>
+                            </li>
+                            <li><a href="dragon-ball.html" target="_blank" rel="noopener noreferrer">DRAGON BALL</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="categorias.html" target="_blank" rel="noopener noreferrer">TOP VENTAS</a></li>
+                    <li><a href="productos.html" target="_blank" rel="noopener noreferrer">NOVEDADES</a></li>
+                    <li><a href="productos.html" target="_blank" rel="noopener noreferrer">OFERTAS</a></li>
+                    <li><a href="#" target="_blank" rel="noopener noreferrer">EN STOCK</a></li>
+                    <li><a href="#" target="_blank" rel="noopener noreferrer">VIP</a></li>
+                </ul>
+            </nav>
+        </header>
+
         <main>
             <section>
                 <h2>Contáctanos</h2>
@@ -83,6 +129,7 @@
                 <p>2020 © The FunkoShop SL. Creada por estudiantes de 2º DAW.</p>
             </div>
         </footer>
-    </body>
+    </div>
+</body>
 
 </html>

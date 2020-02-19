@@ -18,21 +18,6 @@
         flex-direction: column;
     }
 
-    .ventas img,
-    .novedades img,
-    .ofertas img {
-        width: 100%;
-        margin: 5px;
-    }
-
-    aside {
-        flex-direction: row;
-        flex: 0;
-    }
-
-    aside .comentarios {
-        flex-grow: 1;
-    }
     footer {
         height:auto;
     }

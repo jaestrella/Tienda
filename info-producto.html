@@ -17,51 +17,56 @@
     <link rel="stylesheet" type="text/css" href="ASSETS/CSS/reset.css">
     <link rel="stylesheet" type="text/css" href="ASSETS/CSS/general.css">
     <link rel="stylesheet" type="text/css" href="ASSETS/CSS/producto.css">
+    <link rel="stylesheet" type="text/css" href="ASSETS/CSS/media_queries/mobile_general.css">
+    <!--link rel="stylesheet" type="text/css" href="ASSETS/CSS/media_queries/mobile_producto.css"-->
 </head>
 
 <body>
-    <header>
-        <div class="div-logo">
-            <a href="index.html"><img src="ASSETS\MULTIMEDIA\IMAGENES\LOGO\logo_tienda_negro_redim.svg" class="logo" alt="Logo"></a>
-        </div>
-        <div class="busqueda">
-            <form action="">
-                <input type="text" placeholder="Busqueda sobre funkos..." class="texto" />
-                <input type="button" name="buscar" value="     Buscar" class="search" />
-            </form>
-        </div>
-        <div class="acceso" id="propiedades">
-            <a href="acceso.html">
-                <img src="ASSETS\MULTIMEDIA\IMAGENES\acceso.png" alt="Acceso" />
-            </a>
-        </div>
+    <div class="contenedor">
+        <header>
+            <div class="div-logo">
+                <a href="index.html"><img src="ASSETS\MULTIMEDIA\IMAGENES\LOGO\logo_tienda_negro_redim.svg" class="logo"
+                        alt="Logo"></a>
+            </div>
+            <div class="busqueda">
+                <form action="">
+                    <input type="text" placeholder="Busqueda sobre funkos..." class="texto" />
+                    <input type="button" name="buscar" value="     Buscar" class="search" />
+                </form>
+            </div>
+            <div class="acceso" id="propiedades">
+                <a href="acceso.html">
+                    <img src="ASSETS\MULTIMEDIA\IMAGENES\acceso.png" alt="Acceso" />
+                </a>
+            </div>
 
-        <div class="carrito" id="propiedades">
-            <a href="carrito.html">
-                <img src="ASSETS\MULTIMEDIA\IMAGENES\carro-de-la-compra.png" alt="Carrito" />
-            </a>
-        </div>
+            <div class="carrito" id="propiedades">
+                <a href="carrito.html">
+                    <img src="ASSETS\MULTIMEDIA\IMAGENES\carro-de-la-compra.png" alt="Carrito" />
+                </a>
+            </div>
 
-        <nav class="menu" id="menu">
-            <ul>
-                <li><a href="categorias.html" target="_blank" rel="noopener noreferrer">CATEGORIAS</a>
-                    <ul>
-                        <li><a href="marvel.html" target="_blank" rel="noopener noreferrer">MARVEL</a></li>
-                        <li><a href="dc.html" target="_blank" rel="noopener noreferrer">DC</a></li>
-                        <li><a href="juego-tronos.html" target="_blank" rel="noopener noreferrer">JUEGO DE TRONOS</a></li>
-                        <li><a href="dragon-ball.html" target="_blank" rel="noopener noreferrer">DRAGON BALL</a></li>
-                    </ul>
-                </li>
-                <li><a href="categorias.html" target="_blank" rel="noopener noreferrer">TOP VENTAS</a></li>
-                <li><a href="productos.html" target="_blank" rel="noopener noreferrer">NOVEDADES</a></li>
-                <li><a href="productos.html" target="_blank" rel="noopener noreferrer">OFERTAS</a></li>
-                <li><a href="#" target="_blank" rel="noopener noreferrer">EN STOCK</a></li>
-                <li><a href="#" target="_blank" rel="noopener noreferrer">VIP</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <div class="padre">
+            <nav class="menu" id="menu">
+                <ul>
+                    <li><a href="categorias.html" target="_blank" rel="noopener noreferrer">CATEGORIAS</a>
+                        <ul>
+                            <li><a href="marvel.html" target="_blank" rel="noopener noreferrer">MARVEL</a></li>
+                            <li><a href="dc.html" target="_blank" rel="noopener noreferrer">DC</a></li>
+                            <li><a href="juego-tronos.html" target="_blank" rel="noopener noreferrer">JUEGO DE
+                                    TRONOS</a></li>
+                            <li><a href="dragon-ball.html" target="_blank" rel="noopener noreferrer">DRAGON BALL</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="categorias.html" target="_blank" rel="noopener noreferrer">TOP VENTAS</a></li>
+                    <li><a href="productos.html" target="_blank" rel="noopener noreferrer">NOVEDADES</a></li>
+                    <li><a href="productos.html" target="_blank" rel="noopener noreferrer">OFERTAS</a></li>
+                    <li><a href="#" target="_blank" rel="noopener noreferrer">EN STOCK</a></li>
+                    <li><a href="#" target="_blank" rel="noopener noreferrer">VIP</a></li>
+                </ul>
+            </nav>
+        </header>
+
         <main>
             <section>
                 <div class="imagenes">
@@ -72,10 +77,20 @@
                 <div class="info">
                     <h2>Funko de GOT: Jon Nieve</h2>
                     <ul>
-                        <li><p class="descripcion">Funko de Juego de Tronos del personaje Jon Nieve, con un tamaño de 12 cm de alto por 5 de ancho</p></li>
-                        <li><p class="cantidad">¿Cuántos deseas comprar?<input type="number" name="cantidad" id="cantidad" min="1" max="10" step="1" required></p></li>
-                        <li><p class="precio">14.50 €</p></li>
-                        <li><p class="botones"><a href="#">Comprar</a><a href="index.html">Cancelar</a></p></li>
+                        <li>
+                            <p class="descripcion">Funko de Juego de Tronos del personaje Jon Nieve, con un tamaño de 12
+                                cm de alto por 5 de ancho</p>
+                        </li>
+                        <li>
+                            <p class="cantidad">¿Cuántos deseas comprar?<input type="number" name="cantidad"
+                                    id="cantidad" min="1" max="10" step="1" required></p>
+                        </li>
+                        <li>
+                            <p class="precio">14.50 €</p>
+                        </li>
+                        <li>
+                            <p class="botones"><a href="#">Comprar</a><a href="index.html">Cancelar</a></p>
+                        </li>
                     </ul>
                 </div>
             </section>
@@ -104,40 +119,41 @@
                 </p>
             </div>
         </aside>
-    </div>
 
-    <footer>
-        <div class="info-pagina">
-            <p>Ayuda e información</p>
-            <ul>
-                <li>-<a href="politica-privacidad.html" target="_blank" rel="noopener noreferrer">Política de
-                        privacidad</a></li>
-                <li>-<a href="politica-datos.html" target="_blank" rel="noopener noreferrer">Política de protección de
-                        datos y condiciones de uso</a></li>
-                <li>-<a href="contacto.html" target="_blank" rel="noopener noreferrer">Página de contacto</a></li>
-            </ul>
-        </div>
-        <div class="social">
-            <ul>
-                <li><a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><img
-                            src="ASSETS/MULTIMEDIA/IMAGENES/facebook.png" alt="Facebook"></a></li>
-                <li><a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><img
-                            src="ASSETS/MULTIMEDIA/IMAGENES/twitter.png" alt="Twitter"></a></li>
-                <li><a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><img
-                            src="ASSETS/MULTIMEDIA/IMAGENES/instagram.png" alt="Instagram"></a></li>
-            </ul>
-        </div>
-        <div class="info-pago">
-            <ul>
-                <li><img src="ASSETS/MULTIMEDIA/IMAGENES/tarjeta-mastercard.png" alt="Mastercard"></li>
-                <li><img src="ASSETS/MULTIMEDIA/IMAGENES/visa.png" alt="Visa"></li>
-                <li><img src="ASSETS/MULTIMEDIA/IMAGENES/paypal.png" alt="Paypal"></li>
-            </ul>
-        </div>
-        <div class="copyright">
-            <p>2020 © The FunkoShop SL. Creada por estudiantes de 2º DAW.</p>
-        </div>
-    </footer>
+        <footer>
+            <div class="info-pagina">
+                <p>Ayuda e información</p>
+                <ul>
+                    <li>-<a href="politica-privacidad.html" target="_blank" rel="noopener noreferrer">Política de
+                            privacidad</a></li>
+                    <li>-<a href="politica-datos.html" target="_blank" rel="noopener noreferrer">Política de protección
+                            de
+                            datos y condiciones de uso</a></li>
+                    <li>-<a href="contacto.html" target="_blank" rel="noopener noreferrer">Página de contacto</a></li>
+                </ul>
+            </div>
+            <div class="social">
+                <ul>
+                    <li><a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><img
+                                src="ASSETS/MULTIMEDIA/IMAGENES/facebook.png" alt="Facebook"></a></li>
+                    <li><a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><img
+                                src="ASSETS/MULTIMEDIA/IMAGENES/twitter.png" alt="Twitter"></a></li>
+                    <li><a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><img
+                                src="ASSETS/MULTIMEDIA/IMAGENES/instagram.png" alt="Instagram"></a></li>
+                </ul>
+            </div>
+            <div class="info-pago">
+                <ul>
+                    <li><img src="ASSETS/MULTIMEDIA/IMAGENES/tarjeta-mastercard.png" alt="Mastercard"></li>
+                    <li><img src="ASSETS/MULTIMEDIA/IMAGENES/visa.png" alt="Visa"></li>
+                    <li><img src="ASSETS/MULTIMEDIA/IMAGENES/paypal.png" alt="Paypal"></li>
+                </ul>
+            </div>
+            <div class="copyright">
+                <p>2020 © The FunkoShop SL. Creada por estudiantes de 2º DAW.</p>
+            </div>
+        </footer>
+    </div>
 </body>
 
 </html>
