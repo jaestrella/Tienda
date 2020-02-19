@@ -18,7 +18,7 @@ section form{
     text-align: left;
    }
 
-   section input:not(#politica){
+   main section input:not(#politica,.busqueda){
     width: 100%;
     margin-bottom: 20px;
     padding: 7px;
@@ -79,7 +79,7 @@ section form{
     fieldset {
         width:69%;
     }
-    input:not(#politica) {
+    main input:not(#politica,.busqueda) {
         width: 50%!important;
         clear:both;
     }

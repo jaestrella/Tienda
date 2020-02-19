@@ -18,7 +18,7 @@ section form{
     text-align: left;
    }
 
-   section input:not(#politica){
+   main section input:not(.busqueda){
     width: 100%;
     margin-bottom: 20px;
     padding: 7px;
