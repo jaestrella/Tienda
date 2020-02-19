@@ -1,0 +1,55 @@
+/*--CSS contenido index.html--*/
+
+main {
+    background: #fff;
+    padding: 20px;
+
+    flex: 1 1 100%;
+    /*flex:1;*/
+}
+.catdiv1,
+.catdiv2 {
+    width:100%;
+    text-align: center;
+    margin-bottom: 20px;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.catdiv1 div, .catdiv2 div {
+    flex-direction: row;
+}
+
+
+
+.catdiv1 img,
+.catdiv2 img {
+    width: 500px;
+    margin: 5px 10px;
+}
+.catdiv1 img:hover,
+.catdiv2 img:hover {
+    -webkit-box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.75);
+    transition: 1s;
+    cursor: pointer;
+}
+h2 {
+    text-align: center;
+    background-color: #5499c7;
+    color: white;
+    padding: 10px;
+    border-radius: 12px;
+    border: 2px solid #22638c;
+    font-weight: bold;
+}
+
+main h2:first-child {
+    margin-top: 10px;
+}
+
+h3{
+    font-size: 2em;
+}
