@@ -70,7 +70,7 @@ div .texto {
     color: white;
     font-weight: bold;
     width: 100px;
-    transition: 1s;
+    transition: 0.5s;
 }
 
 .search:hover {
@@ -124,19 +124,15 @@ header nav ul {
 header nav li a {
     text-decoration: none;
     color: #fff;
-    
 }
 
 header nav li {
     background-color: #154360;
     font-weight: bold;
     text-align: center;
-    padding: 20px;
 
     /* Flexbox */
     flex-grow: 1;
-    
-    /*! width: 100%; */
 }
 
 header nav li:hover {
@@ -151,14 +147,17 @@ header nav li:hover {
 
 .menu ul ul {
 	position: absolute;
-	top: 220px;
-	width: 265px;
+	top: 201px;
+    width: 280px;
+}
+
+.menu ul li {
+    padding:10px;
 }
 
 .menu ul li:hover ul {
     display: block;
 }
-
 
 
 /*-----FOOTER-----*/

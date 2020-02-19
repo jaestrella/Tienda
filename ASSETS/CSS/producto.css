@@ -1,75 +1,75 @@
 /* CSS para la página de cada producto */
 
-.padre {
-    width: 100%;
-    height: auto;
-    max-width: 100%;
-    margin: 20px 40px;
-    display:block;
+.contenedor {
+    height:auto;
+
+    /* FLEXBOX */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
 }
 
 main {
-    width: 80%;
-    margin: 0 12%;
-    height:70vh;
+    width: 100%;
+    height: auto;
+    
+    /* FLEXBOX */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin:2% 0;
 }
 
 /* PRODUCTO */
-
-.imagenes {
-    border:2px solid black;
-    width:30%;
-    float:left;
-}
-
+/*Resto de estilos para el slider en slide.css*/
 .imagenes img {
-    width: 70%;
-    margin-left: 10%;
+    width: 100%;
 }
 
 .info {
-    float:left;
-    width: 40%;
-    border:2px solid black;
-    margin-left:3%;
-    padding:6px;
+    width: 45%;
+    padding: 10px;
     line-height: 60px;
+    background-color: #5499c767;
+    border-radius:6px;
 }
 
 .info h2 {
-   font-size:1.2em;
-   font-weight: bold;   
+    font-size: 1.2em;
+    font-weight: bold;
 }
 
 .info li {
-    margin-left:5%;
-    display:block;
-    font-style:oblique;
+    font-style: oblique;
+    padding:5px;
+}
+
+.info .botones a {
+    margin:5px;
 }
 
 .info li p input {
-    width:40px;
-    margin-left:4%;
+    width: 10%;
     border-radius: 5px;
-    padding:10px;
-    font-size:0.8em;
+    padding: 10px;
+    font-size: 0.8em;
 }
 
 .info li a {
-    padding:6px;
-    margin:5%;
+    padding: 6px;
     color: white;
     font-weight: bold;
     text-decoration: none;
-    border:2px solid grey;
+    border: 2px solid grey;
     border-radius: 8px;
-    background-color:#22638c;
+    background-color: #22638c;
 }
 
 .info li a:hover {
-    background-color:#5499c7;
-    color:black;
-    border:2px solid black;
+    background-color: #fff;
+    color: #22638c;
+    border: 2px solid #22638c;
 }
 
 .descripcion {
@@ -82,18 +82,21 @@ main {
 
 
 aside {
-    float: none;
     width: 80%;
     max-width: 1000px;
-    max-height: 1000px;
-    border: 2px solid black;
-    margin:0 20%;
+    padding: 10px;
+    margin-bottom:2%;
+}
+
+aside .comentarios {
+    background-color:lightgrey;
+    margin:5px;
+    padding:6px;
+    border-radius: 12px;
 }
 
 aside img {
-    float: left;
     width: 50px;
-    margin-right: 15px;
 }
 
 aside h3 {
