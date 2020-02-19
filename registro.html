@@ -18,68 +18,57 @@
     <link rel="stylesheet" type="text/css" href="ASSETS/CSS/general.css">
     <link rel="stylesheet" type="text/css" href="ASSETS/CSS/index.css">
     <link rel="stylesheet" type="text/css" href="ASSETS/CSS/registro.css">
-    <link rel="stylesheet" type="text/css" media="(min-width: 320px) and (max-width:720px)"
-        href="ASSETS/CSS/media_queries/mobile.css">
+    <link rel="stylesheet" type="text/css" href="ASSETS/CSS/media_queries/mobile_general.css">
+    <!--link rel="stylesheet" type="text/css" href="ASSETS/CSS/media_queries/mobile_registro.css"-->
 </head>
 
 <body>
-    <header>
-        <div class="div-logo">
-            <a href="index.html"><img src="ASSETS\MULTIMEDIA\IMAGENES\LOGO\logo_tienda_negro_redim.svg" class="logo" alt="Logo"></a>
-        </div>
-        <div class="busqueda">
-            <form action="">
-                <input type="text" placeholder="Busqueda sobre funkos..." class="texto" />
-                <input type="button" name="buscar" value="     Buscar" class="search" />
-            </form>
-        </div>
-        <div class="acceso" id="propiedades">
-            <a href="acceso.html">
-                <img src="ASSETS\MULTIMEDIA\IMAGENES\acceso.png" alt="Acceso" />
-            </a>
-        </div>
+    <div class="contenedor">
+        <header>
+            <div class="div-logo">
+                <a href="index.html"><img src="ASSETS\MULTIMEDIA\IMAGENES\LOGO\logo_tienda_negro_redim.svg" class="logo"
+                        alt="Logo"></a>
+            </div>
+            <div class="busqueda">
+                <form action="">
+                    <input type="text" placeholder="Busqueda sobre funkos..." class="texto" />
+                    <input type="button" name="buscar" value="     Buscar" class="search" />
+                </form>
+            </div>
+            <div class="acceso" id="propiedades">
+                <a href="acceso.html">
+                    <img src="ASSETS\MULTIMEDIA\IMAGENES\acceso.png" alt="Acceso" />
+                </a>
+            </div>
 
-        <div class="carrito" id="propiedades">
-            <a href="carrito.html">
-                <img src="ASSETS\MULTIMEDIA\IMAGENES\carro-de-la-compra.png" alt="Carrito" />
-            </a>
-        </div>
+            <div class="carrito" id="propiedades">
+                <a href="carrito.html">
+                    <img src="ASSETS\MULTIMEDIA\IMAGENES\carro-de-la-compra.png" alt="Carrito" />
+                </a>
+            </div>
 
-        <nav class="menu" id="menu">
-            <ul>
-                <li><a href="categorias.html" target="_blank" rel="noopener noreferrer">CATEGORIAS</a>
-                    <ul>
-                        <li><a href="marvel.html" target="_blank" rel="noopener noreferrer">MARVEL</a>
-                            <ul>
-                                <li><a href="productos.html" target="_blank" rel="noopener noreferrer">FUNKO 1</a></li>
-                                <li><a href="productos.html" target="_blank" rel="noopener noreferrer">FUNKO 2</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="dc.html" target="_blank" rel="noopener noreferrer">DC</a></li>
-                        <li><a href="juego-tronos.html" target="_blank" rel="noopener noreferrer">JUEGO DE TRONOS</a>
-                        </li>
-                        <li><a href="dragon-ball.html" target="_blank" rel="noopener noreferrer">DRAGON BALL</a></li>
-                    </ul>
-                </li>
-                <li><a href="categorias.html" target="_blank" rel="noopener noreferrer">TOP VENTAS</a></li>
-                <li><a href="productos.html" target="_blank" rel="noopener noreferrer">NOVEDADES</a></li>
-                <li><a href="productos.html" target="_blank" rel="noopener noreferrer">OFERTAS</a>
-                    <ul>
-                        <li><a href="juego-tronos.html" target="_blank" rel="noopener noreferrer">JUEGO DE TRONOS</a>
-                            <ul>
-                                <li><a href="productos.html" target="_blank" rel="noopener noreferrer">FUNKO 1</a></li>
-                                <li><a href="productos.html" target="_blank" rel="noopener noreferrer">FUNKO 2</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-                <li><a href="#" target="_blank" rel="noopener noreferrer">EN STOCK</a></li>
-                <li><a href="#" target="_blank" rel="noopener noreferrer">VIP</a></li>
-            </ul>
-        </nav>
-    </header>
+            <nav class="menu" id="menu">
+                <ul>
+                    <li><a href="categorias.html" target="_blank" rel="noopener noreferrer">CATEGORIAS</a>
+                        <ul>
+                            <li><a href="marvel.html" target="_blank" rel="noopener noreferrer">MARVEL</a></li>
+                            <li><a href="dc.html" target="_blank" rel="noopener noreferrer">DC</a></li>
+                            <li><a href="juego-tronos.html" target="_blank" rel="noopener noreferrer">JUEGO DE
+                                    TRONOS</a>
+                            </li>
+                            <li><a href="dragon-ball.html" target="_blank" rel="noopener noreferrer">DRAGON BALL</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="categorias.html" target="_blank" rel="noopener noreferrer">TOP VENTAS</a></li>
+                    <li><a href="productos.html" target="_blank" rel="noopener noreferrer">NOVEDADES</a></li>
+                    <li><a href="productos.html" target="_blank" rel="noopener noreferrer">OFERTAS</a></li>
+                    <li><a href="#" target="_blank" rel="noopener noreferrer">EN STOCK</a></li>
+                    <li><a href="#" target="_blank" rel="noopener noreferrer">VIP</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <body>
         <main>
             <section>
                 <h2>Registro en FunkoShop</h2>
@@ -110,7 +99,7 @@
                         <label for="cp">CÓDIGO POSTAL</label>
                         <input id="cp" name="cp" type="number" min="1" max="30001" placeholder="Código postal" />
 
-                        
+
                         <label for="politica">Acepto las políticas de la empresa</label>
                         <input id="politica" name="politica" type="checkbox" value="" />
 
@@ -120,6 +109,7 @@
                 </form>
             </section>
         </main>
+
         <footer>
             <div class="info-pagina">
                 <p>Ayuda e información</p>
@@ -153,6 +143,7 @@
                 <p>2020 © The FunkoShop SL. Creada por estudiantes de 2º DAW.</p>
             </div>
         </footer>
-    </body>
+    </div>
+</body>
 
 </html>

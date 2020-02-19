@@ -109,64 +109,56 @@ header nav {
 
     /* Flexbox */
     display: flex;
+    justify-content: space-around;
+}
+
+header nav ul {
+    width: 100%;
+    /* Flexbox */
+    display:flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
 }
 
-header nav a {
-    background-color: #154360;
+header nav li a {
+    text-decoration: none;
     color: #fff;
+    
+}
+
+header nav li {
+    background-color: #154360;
     font-weight: bold;
     text-align: center;
-    text-decoration: none;
     padding: 20px;
 
     /* Flexbox */
     flex-grow: 1;
+    
+    /*! width: 100%; */
 }
 
-header nav a:hover {
+header nav li:hover {
     background: #5b78a7;
+    cursor: pointer;
 }
 
 /*----- MENU DESPLEGABLE ------*/
 .menu ul ul {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    padding: 0;
-    width: 600px;
+    display:none;
 }
 
-.menu ul ul li {
-    float: none;
-    width: 50%;
+.menu ul ul {
+	position: absolute;
+	top: 220px;
+	width: 265px;
 }
 
-.menu ul ul ul li {
-    float: right;
-    width: 51%;
-}
-
-.menu ul ul a {
-    line-height: 120%;
-    padding: 10px 15px;
-}
-
-.menu ul li:hover>ul {
+.menu ul li:hover ul {
     display: block;
-    transition-delay: 2s;
 }
 
-.menu ul ul li:hover ul {
-    display: block;
-    transition-delay: 2s;
-    position: absolute;
-    top: 0px;
-    z-index: 99;
-}
 
 
 /*-----FOOTER-----*/
