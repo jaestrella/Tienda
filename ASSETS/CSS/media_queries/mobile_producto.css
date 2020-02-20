@@ -1,0 +1,24 @@
+/*---------- MEDIA QUERIES -------------*/
+@media screen and (max-width: 800px) {
+    main {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        margin:0px;
+        align-items: center;
+    }
+    .galeria li:first-child img {
+        max-height: 550px;
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+
+    .galeria li:first-child img {
+        max-height: 550px;
+        max-width: 90%;
+    }
+}

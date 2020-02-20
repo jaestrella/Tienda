@@ -29,8 +29,10 @@ main {
 
 .info {
     width: 45%;
+    max-height: 450px;
+    margin-left:10px;
     padding: 10px;
-    line-height: 60px;
+    line-height: 50px;
     background-color: #5499c767;
     border-radius:6px;
 }
@@ -50,7 +52,7 @@ main {
 }
 
 .info li p input {
-    width: 60px;
+    width: 80px;
     border-radius: 5px;
     padding: 10px;
     font-size: 0.8em;
