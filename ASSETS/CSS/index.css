@@ -15,6 +15,16 @@ main {
     margin-bottom: 20px;
 }
 
+.video{
+    width:100%;
+    display:flex;
+    justify-content: center;
+}
+
+.video iframe {
+    width: 75%;
+}
+
 .ventas img,
 .novedades img,
 .ofertas img {
