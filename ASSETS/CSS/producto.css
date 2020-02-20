@@ -50,7 +50,7 @@ main {
 }
 
 .info li p input {
-    width: 10%;
+    width: 60px;
     border-radius: 5px;
     padding: 10px;
     font-size: 0.8em;

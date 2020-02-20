@@ -20,6 +20,9 @@
     <link rel="stylesheet" type="text/css" href="ASSETS/CSS/slide.css">
     <link rel="stylesheet" type="text/css" href="ASSETS/CSS/media_queries/mobile_general.css">
     <!--link rel="stylesheet" type="text/css" href="ASSETS/CSS/media_queries/mobile_producto.css"-->
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="JS/jquery.slides.min.js"></script>
+    <script src="JS/jquery.slides.js"></script>
     <script src="ASSETS/JS/slide.js" defer></script>
 </head>
 
@@ -73,8 +76,8 @@
             <div class="imagenes">
                 <div class="slides">
                     <img src="ASSETS/MULTIMEDIA/IMAGENES/FUNKOS/GoT/jhon_snow.png" alt="John Snow">
-                    <img src="ASSETS/MULTIMEDIA/IMAGENES/FUNKOS/GoT/jon-snow-1.jpg" alt="Arya">
-                    <img src="ASSETS/MULTIMEDIA/IMAGENES/FUNKOS/GoT/jon-snow-2.jpg" alt="John Snow 2">
+                    <img src="ASSETS/MULTIMEDIA/IMAGENES/FUNKOS/GoT/jon-snow-1.jpg" alt="John Snow 2">
+                    <img src="ASSETS/MULTIMEDIA/IMAGENES/FUNKOS/GoT/jon-snow-2.jpg" alt="John Snow 3">
                 </div>
             </div>
             <div class="info">
@@ -155,6 +158,32 @@
             </div>
         </footer>
     </div>
+    
+<script>
+
+$(function(){
+$(".slides").slidesjs({
+play: {
+  active: true,
+    // [boolean] Generate the play and stop buttons.
+    // You cannot use your own buttons. Sorry.
+  effect: "slide",
+    // [string] Can be either "slide" or "fade".
+  interval: 3000,
+    // [number] Time spent on each slide in milliseconds.
+  auto: true,
+    // [boolean] Start playing the slideshow on load.
+  swap: true,
+    // [boolean] show/hide stop and play buttons
+  pauseOnHover: false,
+    // [boolean] pause a playing slideshow on hover
+  restartDelay: 2500
+    // [number] restart delay on inactive slideshow
+}
+});
+});
+
+</script>
 </body>
 
 </html>
