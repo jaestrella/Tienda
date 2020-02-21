@@ -6,19 +6,55 @@
         height: auto;
         display: flex;
         flex-direction: column;
-        margin:0px;
+        margin: 0px;
         align-items: center;
     }
+
+    #galeria {
+        margin: 3%;
+    }
+
+    .galeria {
+        display: flex;
+        flex-flow: row-reverse;
+    }
+
     .galeria li:first-child img {
         max-height: 550px;
-        max-width: 100%;
+        max-width: 80%;
+    }
+
+    .galeria li:nth-child(2) img,
+    .galeria li:nth-child(3) img {
+        width: 60px;
+    }
+
+    .info {
+        width: 85%;
     }
 }
 
 @media screen and (max-width: 1200px) {
+    .galeria {
+        display: flex;
+        flex-flow: row-reverse;
+    }
+
+    #galeria {
+        margin: 3%;
+    }
 
     .galeria li:first-child img {
         max-height: 550px;
         max-width: 90%;
+    }
+
+    .galeria li:nth-child(2) img,
+    .galeria li:nth-child(3) img {
+        width: 50px;
+    }
+
+    .info {
+        width: 65%;
     }
 }

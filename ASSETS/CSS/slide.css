@@ -11,8 +11,12 @@
 #galeria{
 	color:black;
 	width:60%;
-	margin:0 2%;
+	margin-right:3%;
 	padding:10px 6px 10px 6px;
+}
+
+#galeria:hover {
+	cursor:pointer;
 }
 
 .galeria {
@@ -74,7 +78,7 @@
 }
 /*Y las otras junto a la grande pero en miniatura*/
 .galeria li:nth-child(2) img, .galeria li:nth-child(3) img {
-	width: 100px;
+	width: 80px;
 }
 
 .imagen a{

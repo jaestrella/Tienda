@@ -13,25 +13,21 @@
     <meta http-equiv="expires" content="Sun, 01 March 2020 00:00:00 GMT" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Inicio - FunkoShop</title>
-    <link rel="icon" type="image/png" href="ASSETS/MULTIMEDIA/IMAGENES/LOGO/logo_tienda_negro_fav.svg" sizes="16x16">
-    <link rel="icon" type="image/png" href="ASSETS/MULTIMEDIA/IMAGENES/LOGO/logo_tienda_negro_fav.svg" sizes="32x32">
-    <link rel="icon" type="image/png" href="ASSETS/MULTIMEDIA/IMAGENES/LOGO/logo_tienda_negro_fav.svg" sizes="64x64">
+    <title>Funko GOT - FunkoShop</title>
     <link rel="stylesheet" type="text/css" href="ASSETS/CSS/reset.css">
     <link rel="stylesheet" type="text/css" href="ASSETS/CSS/general.css">
-    <link rel="stylesheet" type="text/css" href="ASSETS/CSS/index.css">
+    <link rel="stylesheet" type="text/css" href="ASSETS/CSS/producto.css">
+    <link rel="stylesheet" type="text/css" href="ASSETS/CSS/slide.css">
     <link rel="stylesheet" type="text/css" href="ASSETS/CSS/media_queries/mobile_general.css">
-    <link rel="stylesheet" type="text/css" href="ASSETS/CSS/media_queries/mobile_index.css">
-
+    <link rel="stylesheet" type="text/css" href="ASSETS/CSS/media_queries/mobile_producto.css">
 </head>
 
 <body>
-
     <div class="contenedor">
         <header>
             <div class="div-logo">
                 <a href="index.html"><img src="ASSETS\MULTIMEDIA\IMAGENES\LOGO\logo_tienda_negro_redim.svg" class="logo"
-                        alt="Logo FunkoShop"></a>
+                        alt="Logo"></a>
             </div>
             <div class="busqueda">
                 <form action="">
@@ -40,41 +36,26 @@
                 </form>
             </div>
             <div class="acceso" id="propiedades">
-                <img id="myBtn" src="ASSETS\MULTIMEDIA\IMAGENES\acceso.png" width="150px" alt="Acceso" />
+                <a href="acceso.html">
+                    <img src="ASSETS\MULTIMEDIA\IMAGENES\acceso.png" alt="Acceso" />
+                </a>
             </div>
-
-            <div id="myModal" class="modal">
-                <div class="modal-content">
-                    <span class="close">&times;</span>
-                    <h1>Login</h1>
-
-                    <input type="text" placeholder="Enter Email" name="email" required>
-
-                    <input type="password" placeholder="Enter Password" name="psw" required>
-
-                    <button type="submit" class="btn">Login</button>
-                    <a href="registro.html"><button type="button" class="registro">Registrarse</button></a>
-                </div>
-            </div>
-            <script src="ASSETS/JS/poplogin.js"></script>
 
             <div class="carrito" id="propiedades">
                 <a href="carrito.html">
-                    <img src="ASSETS\MULTIMEDIA\IMAGENES\carro-de-la-compra.png" width="150px" alt="Carrito" />
+                    <img src="ASSETS\MULTIMEDIA\IMAGENES\carro-de-la-compra.png" alt="Carrito" />
                 </a>
             </div>
 
             <nav class="menu" id="menu">
                 <ul>
-                    <li><a href="categorias.html" rel="noopener noreferrer">CATEGORIAS</a>
+                    <li><a href="categorias.html" id="categorias" rel="noopener noreferrer">CATEGORIAS</a>
                         <ul>
-                            <li><a href="categoria_marvel.html" rel="noopener noreferrer">MARVEL</a>
-                            </li>
+                            <li><a href="categoria_marvel.html" rel="noopener noreferrer">MARVEL</a></li>
                             <li><a href="categoria_dc.html" rel="noopener noreferrer">DC</a></li>
                             <li><a href="categoria_GoT.html" rel="noopener noreferrer">JUEGO DE
                                     TRONOS</a></li>
-                            <li><a href="categoria_dragonball.html" rel="noopener noreferrer">DRAGON
-                                    BALL</a>
+                            <li><a href="categoria_dragonball.html" rel="noopener noreferrer">DRAGON BALL</a>
                             </li>
                         </ul>
                     </li>
@@ -88,25 +69,63 @@
         </header>
 
         <main>
-            <div class="ventas">
-                <h2>TOP VENTAS</h2>
-                <img src="ASSETS/MULTIMEDIA/IMAGENES/FUNKOS/DragonBall/chichi.png" alt="Chichi">
-                <img src="ASSETS/MULTIMEDIA/IMAGENES/FUNKOS/GoT/rey_noche.jpg" alt="Rey Noche">
-                <img src="ASSETS/MULTIMEDIA/IMAGENES/FUNKOS/DC/batgirl.jpg" alt="Batgirl">
+                <div class="imagenes" id="galeria">
+                    <ul class="galeria">
+                        <li><a href="#img1"><img src="ASSETS/MULTIMEDIA/IMAGENES/FUNKOS/GoT/jhon_snow.png" alt="Jon Nieve"></a></li>
+                        <li><a href="#img2"><img src="ASSETS/MULTIMEDIA/IMAGENES/FUNKOS/GoT/john-snow-1.jpg" alt="Jon Nieve"></a></li>
+                        <li><a href="#img3"><img src="ASSETS/MULTIMEDIA/IMAGENES/FUNKOS/GoT/john-snow-500x500.jpg" alt="Jon Nieve"></a></li>
+                    </ul>	
+                    
+                    <div class="modal" id="img1">
+                        <h3>Slide 1</h3>
+                        <div class="imagen">
+                            <a href="#img3">&#60;</a>
+                            <a href="#img1"><img src="ASSETS/MULTIMEDIA/IMAGENES/FUNKOS/GoT/jhon_snow.png" alt="Jon Nieve"></a>
+                            <a href="#img2">></a>
+                        </div>
+                        <a class="cerrar" href="#galeria">X</a>
+                    </div>
+                    
+                    <div class="modal" id="img2">
+                        <h3>Slide 2</h3>
+                        <div class="imagen">
+                            <a href="#img1">&#60;</a>
+                            <a href="#img2"><img src="ASSETS/MULTIMEDIA/IMAGENES/FUNKOS/GoT/john-snow-1.jpg" alt="Jon Nieve"></a>
+                            <a href="#img3">></a>
+                        </div>
+                        <a class="cerrar" href="#galeria">X</a>
+                    </div>
+                    
+                    <div class="modal" id="img3">
+                        <h3>Slide 3</h3>
+                        <div class="imagen">
+                            <a href="#img2">&#60;</a>
+                            <a href="#img3"><img src="ASSETS/MULTIMEDIA/IMAGENES/FUNKOS/GoT/john-snow-500x500.jpg" alt="Jon Nieve"></a>
+                            <a href="#img1">></a>
+                        </div>
+                        <a class="cerrar" href="#galeria">X</a>
+                    </div>
+                </div>
+            <div class="info">
+                <h2>Funko de GOT: Jon Nieve</h2>
+                <ul>
+                    <li>
+                        <p class="descripcion">Funko de Juego de Tronos, del personaje Jon Nieve, con un tamaño de 16 x
+                            12 x 9 cms. </p>
+                    </li>
+                    <li>
+                        <p class="cantidad">¿Cuántos deseas comprar?
+                            <br /><input type="number" name="cantidad" id="cantidad" value="1" min="1" max="10" step="1" required>
+                        </p>
+                    </li>
+                    <li>
+                        <p class="precio">14.50 €</p>
+                    </li>
+                    <li>
+                        <p class="botones"><a href="#">Comprar</a><a href="index.html">Cancelar</a></p>
+                    </li>
+                </ul>
             </div>
-            <div class="novedades">
-                <h2>NOVEDADES</h2>
-                <img src="ASSETS/MULTIMEDIA/IMAGENES/FUNKOS/MARVEL/thanos.png" alt="Thanos">
-                <img src="ASSETS/MULTIMEDIA/IMAGENES/FUNKOS/MARVEL/ironman.jpg" alt="IronMan">
-                <img src="ASSETS/MULTIMEDIA/IMAGENES/FUNKOS/GoT/jhon_snow.png" alt="Jhon Nieve">
-            </div>
-            <div class="ofertas">
-                <h2>OFERTAS</h2>
-                <img src="ASSETS/MULTIMEDIA/IMAGENES/FUNKOS/GoT/yara.png" alt="Yara">
-                <img src="ASSETS/MULTIMEDIA/IMAGENES/FUNKOS/DragonBall/raditz.jpg" alt="Raditz">
-                <img src="ASSETS/MULTIMEDIA/IMAGENES/FUNKOS/GoT/bran.png" alt="Bran">
-            </div>
-
         </main>
 
         <aside>
@@ -114,33 +133,28 @@
                 <img src="ASSETS/MULTIMEDIA/IMAGENES/persona1.jpg" alt="Persona">
                 <h3>Verónica ha comentado:</h3>
                 <p>
-                    Hola, esta página me encanta.
+                    Los mejores Funkos!
                 </p>
             </div>
             <div class="comentarios">
                 <img src="ASSETS/MULTIMEDIA/IMAGENES/persona2.jpg" alt="Persona">
                 <h3>Raúl ha comentado:</h3>
                 <p>
-                    Impresionante!
+                    Precio insuperable, vaya ofertas!
                 </p>
             </div>
             <div class="comentarios">
                 <img src="ASSETS/MULTIMEDIA/IMAGENES/personas.jpg" alt="Persona">
                 <h3>Fátima ha comentado:</h3>
                 <p>
-                    Mis dieses!
+                    Aproveché la oferta 2x1 y ahora estoy encantado
                 </p>
-            </div>
-            <div class="video">
-                <iframe src="https://www.youtube.com/embed/FDEtkcYZjRk" frameborder="0" width="250px"
-                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
             </div>
         </aside>
 
         <footer>
             <div class="info-pagina">
-                <p>Ayuda e información:</p>
+                <p>Ayuda e información</p>
                 <ul>
                     <li>-<a href="politica-privacidad.html" target="_blank" rel="noopener noreferrer">Política de
                             privacidad</a></li>
@@ -170,6 +184,32 @@
             </div>
         </footer>
     </div>
+    
+<script>
+
+$(function(){
+$(".slides").slidesjs({
+play: {
+  active: true,
+    // [boolean] Generate the play and stop buttons.
+    // You cannot use your own buttons. Sorry.
+  effect: "slide",
+    // [string] Can be either "slide" or "fade".
+  interval: 3000,
+    // [number] Time spent on each slide in milliseconds.
+  auto: true,
+    // [boolean] Start playing the slideshow on load.
+  swap: true,
+    // [boolean] show/hide stop and play buttons
+  pauseOnHover: false,
+    // [boolean] pause a playing slideshow on hover
+  restartDelay: 2500
+    // [number] restart delay on inactive slideshow
+}
+});
+});
+
+</script>
 </body>
 
 </html>
