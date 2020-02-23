@@ -19,6 +19,9 @@
     <link rel="stylesheet" type="text/css" href="ASSETS/CSS/index.css">
     <link rel="stylesheet" type="text/css" href="ASSETS/CSS/categoria_producto.css">
     <link rel="stylesheet" type="text/css" href="ASSETS/CSS/media_queries/mobile_general.css">
+    <link rel="stylesheet" type="text/css" href="ASSETS/CSS/media_queries/mobile_categorias.css">
+    <link rel="stylesheet" type="text/css" href="ASSETS/CSS/media_queries/tablet_general.css">
+    <link rel="stylesheet" type="text/css" href="ASSETS/CSS/media_queries/tablet_categorias.css">
 </head>
 
 <body>
@@ -35,10 +38,23 @@
                 </form>
             </div>
             <div class="acceso" id="propiedades">
-                <a href="#">
-                    <img src="ASSETS\MULTIMEDIA\IMAGENES\acceso.png" width="150px" alt="Acceso" />
-                </a>
+                <img id="myBtn" src="ASSETS\MULTIMEDIA\IMAGENES\acceso.png" width="150px" alt="Acceso" />
             </div>
+
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h1>Login</h1>
+
+                    <input type="text" placeholder="Enter Email" name="email" required>
+
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+
+                    <button type="submit" class="btn">Login</button>
+                    <a href="registro.html"><button type="button" class="registro">Registrarse</button></a>
+                </div>
+            </div>
+            <script src="ASSETS/JS/poplogin.js"></script>
 
             <div class="carrito" id="propiedades">
                 <a href="carrito.html">
@@ -48,21 +64,23 @@
 
             <nav class="menu" id="menu">
                 <ul>
-                    <li><a href="categorias.html" target="_blank" rel="noopener noreferrer">CATEGORIAS</a>
+                    <li><a href="categorias.html" rel="noopener noreferrer">CATEGORIAS</a>
                         <ul>
-                            <li><a href="categoria_marvel.html" target="_blank" rel="noopener noreferrer">MARVEL</a></li>
-                            <li><a href="categoria_dc.html" target="_blank" rel="noopener noreferrer">DC</a></li>
-                            <li><a href="categoria_GoT.html" target="_blank" rel="noopener noreferrer">JUEGO DE
+                            <li><a href="categoria_marvel.html" rel="noopener noreferrer">MARVEL</a>
+                            </li>
+                            <li><a href="categoria_dc.html" rel="noopener noreferrer">DC</a></li>
+                            <li><a href="categoria_GoT.html" rel="noopener noreferrer">JUEGO DE
                                     TRONOS</a></li>
-                            <li><a href="categoria_dragonball.html" target="_blank" rel="noopener noreferrer">DRAGON BALL</a>
+                            <li><a href="categoria_dragonball.html" rel="noopener noreferrer">DRAGON
+                                    BALL</a>
                             </li>
                         </ul>
                     </li>
-                    <li><a href="categorias.html" target="_blank" rel="noopener noreferrer">TOP VENTAS</a></li>
-                    <li><a href="productos.html" target="_blank" rel="noopener noreferrer">NOVEDADES</a></li>
-                    <li><a href="productos.html" target="_blank" rel="noopener noreferrer">OFERTAS</a></li>
-                    <li><a href="#" target="_blank" rel="noopener noreferrer">EN STOCK</a></li>
-                    <li><a href="#" target="_blank" rel="noopener noreferrer">VIP</a></li>
+                    <li><a href="categorias.html" rel="noopener noreferrer">TOP VENTAS</a></li>
+                    <li><a href="#" rel="noopener noreferrer">NOVEDADES</a></li>
+                    <li><a href="#" rel="noopener noreferrer">OFERTAS</a></li>
+                    <li><a href="#" rel="noopener noreferrer">EN STOCK</a></li>
+                    <li><a href="#" rel="noopener noreferrer">VIP</a></li>
                 </ul>
             </nav>
         </header>
@@ -70,40 +88,43 @@
 
         <main>
             <h2>Catálogo de Games of Thrones</h2>
-            <div class="catdiv1">
-                <div>
-                    <a href="jhon_snow.html"><img src="ASSETS/MULTIMEDIA/IMAGENES/FUNKOS/GoT/jhon_snow.png" alt="JonSnow"></a>
-                    <h3>JON SNOW</h3>
-                    <p>15 €</p>
+            <div>
+                <div class="catdiv1">
+                    <div>
+                        <a href="funko_got_1.html"><img src="ASSETS/MULTIMEDIA/IMAGENES/FUNKOS/GoT/jhon_snow.png"
+                                alt="John Snow"></a>
+                        <h3>JON SNOW</h3>
+                        <p class="precio">16.95 €</p>
+                    </div>
+                    <div>
+                        <a href="#"><img src="ASSETS/MULTIMEDIA/IMAGENES/FUNKOS/GoT/rey_noche.jpg"
+                                alt="Nigth King & Icy Viserion"></a>
+                        <h3>NIGTH KING & ICY VISERION</h3>
+                        <p class="precio">14.95 €</p>
+                    </div>
+                    <div>
+                        <a href="funko_got_2.html"><img src="ASSETS/MULTIMEDIA/IMAGENES/FUNKOS/GoT/arya.jpg"
+                                alt="Arya Stark"></a>
+                        <h3>ARYA STARK</h3>
+                        <p class="precio">22.95 €</p>
+                    </div>
                 </div>
-                <div>
-                    <a href="rey_noche.html"><img src="ASSETS/MULTIMEDIA/IMAGENES/FUNKOS/GoT/rey_noche.jpg"
-                            alt="NigthKing&IcyViserion"></a>
-                    <h3>NIGTH KING & ICY VISERION</h3>
-                    <p>15 €</p>
-                </div>
-                <div>
-                    <a href="arya.html"><img src="ASSETS/MULTIMEDIA/IMAGENES/FUNKOS/GoT/arya.jpg"
-                            alt="AryaStark"></a>
-                    <h3>ARYA STARK</h3>
-                    <p>15 €</p>
-                </div>
-            </div>
-            <div class="catdiv2">
-                <div>
-                    <a href="bran.html"><img src="ASSETS/MULTIMEDIA/IMAGENES/FUNKOS/GoT/bran.png" alt="BranStark"></a>
-                    <h3>BRAN STARK</h3>
-                    <p>8 €</p>
-                </div>
-                <div>
-                    <a href="davos.html"><img src="ASSETS/MULTIMEDIA/IMAGENES/FUNKOS/GoT/davos.png" alt="DavosSeaworth"></a>
-                    <h3>DAVOS SEAWORTH</h3>
-                    <p>15 €</p>
-                </div>
-                <div>
-                    <a href="yara.html"><img src="ASSETS/MULTIMEDIA/IMAGENES/FUNKOS/GoT/yara.png" alt="YaraGreyjoy"></a>
-                    <h3>YARA GREYJOY</h3>
-                    <p>8 €</p>
+                <div class="catdiv2">
+                    <div>
+                        <a href="#"><img src="ASSETS/MULTIMEDIA/IMAGENES/FUNKOS/GoT/bran.png" alt="Bran Stark"></a>
+                        <h3>BRAN STARK</h3>
+                        <p class="precio">7.95 €</p>
+                    </div>
+                    <div>
+                        <a href="#"><img src="ASSETS/MULTIMEDIA/IMAGENES/FUNKOS/GoT/davos.png" alt="Davos Seaworth"></a>
+                        <h3>DAVOS SEAWORTH</h3>
+                        <p class="precio">14.95 €</p>
+                    </div>
+                    <div>
+                        <a href="#"><img src="ASSETS/MULTIMEDIA/IMAGENES/FUNKOS/GoT/yara.png" alt="Yara Greyjoy"></a>
+                        <h3>YARA GREYJOY</h3>
+                        <p class="precio">7.95 €</p>
+                    </div>
                 </div>
             </div>
         </main>

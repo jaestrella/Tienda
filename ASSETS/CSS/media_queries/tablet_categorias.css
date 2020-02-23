@@ -1,0 +1,24 @@
+/*---------- MEDIA QUERIES - TABLET -------------*/
+@media screen and (min-width: 660px) and (max-width: 980px) {
+    .marvelgot, .dcball {
+        display: flex;
+        flex-direction: column;
+    }
+    .marvelgot img,
+    .dcball img {
+        width: 50%;
+        margin: 5px;
+    }
+    main div{
+        display: flex;
+        flex-direction: row;
+    }
+    .catdiv1, .catdiv2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .catdiv1 div, .catdiv2 div {
+        flex-direction: column;
+    }
+}

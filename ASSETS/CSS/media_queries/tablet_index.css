@@ -1,0 +1,11 @@
+/*---------- MEDIA QUERIES - TABLET -------------*/
+@media screen and (min-width: 660px) and (max-width: 980px) {
+    aside {
+        flex-direction: column;
+        flex: 1 1 100%;
+    }
+
+    aside .comentarios {
+        flex-grow: 1;
+    }
+}

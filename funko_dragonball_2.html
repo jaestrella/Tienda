@@ -36,10 +36,23 @@
                 </form>
             </div>
             <div class="acceso" id="propiedades">
-                <a href="acceso.html">
-                    <img src="ASSETS\MULTIMEDIA\IMAGENES\acceso.png" alt="Acceso" />
-                </a>
+                <img id="myBtn" src="ASSETS\MULTIMEDIA\IMAGENES\acceso.png" width="150px" alt="Acceso" />
             </div>
+
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h1>Login</h1>
+
+                    <input type="text" placeholder="Enter Email" name="email" required>
+
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+
+                    <button type="submit" class="btn">Login</button>
+                    <a href="registro.html"><button type="button" class="registro">Registrarse</button></a>
+                </div>
+            </div>
+            <script src="ASSETS/JS/poplogin.js"></script>
 
             <div class="carrito" id="propiedades">
                 <a href="carrito.html">
@@ -119,7 +132,7 @@
                         </p>
                     </li>
                     <li>
-                        <p class="precio">14.50 €</p>
+                        <p class="precio">14.95 €</p>
                     </li>
                     <li>
                         <p class="botones"><a href="#">Comprar</a><a href="index.html">Cancelar</a></p>

@@ -21,11 +21,9 @@ main {
     flex-direction: row;
 }
 
-
-
 .dcball img,
 .marvelgot img {
-    width: 500px;
+    width: 250px;
     margin: 5px 10px;
 }
 .dcball img:hover,

@@ -27,7 +27,7 @@ main {
 
 .catdiv1 img,
 .catdiv2 img {
-    width: 300px;
+    width: 250px;
     margin: 5px 10px;
 }
 .catdiv1 img:hover,

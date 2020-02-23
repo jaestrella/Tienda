@@ -1,18 +1,16 @@
 /*---------- MEDIA QUERIES - MOVIL -------------*/
 @media screen and (max-width: 660px) {
-    .ventas img,
-    .novedades img,
-    .ofertas img {
+    .marvelgot, .dcball {
+        display: flex;
+        flex-direction: column;
+    }
+    .marvelgot img,
+    .dcball img {
         width: 100%;
         margin: 5px;
     }
-
-    aside {
+     .catdiv1, .catdiv2 {
+        display: flex;
         flex-direction: column;
-        flex: 1 1 100%;
-    }
-
-    aside .comentarios {
-        flex-grow: 1;
     }
 }

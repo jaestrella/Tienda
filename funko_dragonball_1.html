@@ -20,6 +20,7 @@
     <link rel="stylesheet" type="text/css" href="ASSETS/CSS/slide.css">
     <link rel="stylesheet" type="text/css" href="ASSETS/CSS/media_queries/mobile_general.css">
     <link rel="stylesheet" type="text/css" href="ASSETS/CSS/media_queries/mobile_producto.css">
+    <link rel="stylesheet" type="text/css" href="ASSETS/CSS/media_queries/tablet_general.css">
 </head>
 
 <body>
@@ -36,10 +37,23 @@
                 </form>
             </div>
             <div class="acceso" id="propiedades">
-                <a href="acceso.html">
-                    <img src="ASSETS\MULTIMEDIA\IMAGENES\acceso.png" alt="Acceso" />
-                </a>
+                <img id="myBtn" src="ASSETS\MULTIMEDIA\IMAGENES\acceso.png" width="150px" alt="Acceso" />
             </div>
+
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h1>Login</h1>
+
+                    <input type="text" placeholder="Enter Email" name="email" required>
+
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+
+                    <button type="submit" class="btn">Login</button>
+                    <a href="registro.html"><button type="button" class="registro">Registrarse</button></a>
+                </div>
+            </div>
+            <script src="ASSETS/JS/poplogin.js"></script>
 
             <div class="carrito" id="propiedades">
                 <a href="carrito.html">
@@ -49,19 +63,21 @@
 
             <nav class="menu" id="menu">
                 <ul>
-                    <li><a href="categorias.html" id="categorias" rel="noopener noreferrer">CATEGORIAS</a>
+                    <li><a href="categorias.html" rel="noopener noreferrer">CATEGORIAS</a>
                         <ul>
-                            <li><a href="categoria_marvel.html" rel="noopener noreferrer">MARVEL</a></li>
+                            <li><a href="categoria_marvel.html" rel="noopener noreferrer">MARVEL</a>
+                            </li>
                             <li><a href="categoria_dc.html" rel="noopener noreferrer">DC</a></li>
                             <li><a href="categoria_GoT.html" rel="noopener noreferrer">JUEGO DE
                                     TRONOS</a></li>
-                            <li><a href="categoria_dragonball.html" rel="noopener noreferrer">DRAGON BALL</a>
+                            <li><a href="categoria_dragonball.html" rel="noopener noreferrer">DRAGON
+                                    BALL</a>
                             </li>
                         </ul>
                     </li>
                     <li><a href="categorias.html" rel="noopener noreferrer">TOP VENTAS</a></li>
-                    <li><a href="productos.html" rel="noopener noreferrer">NOVEDADES</a></li>
-                    <li><a href="productos.html" rel="noopener noreferrer">OFERTAS</a></li>
+                    <li><a href="#" rel="noopener noreferrer">NOVEDADES</a></li>
+                    <li><a href="#" rel="noopener noreferrer">OFERTAS</a></li>
                     <li><a href="#" rel="noopener noreferrer">EN STOCK</a></li>
                     <li><a href="#" rel="noopener noreferrer">VIP</a></li>
                 </ul>
@@ -69,43 +85,49 @@
         </header>
 
         <main>
-                <div class="imagenes" id="galeria">
-                    <ul class="galeria">
-                        <li><a href="#img1"><img src="ASSETS/MULTIMEDIA/IMAGENES/FUNKOS/DragonBall/chichi.png" alt="Chichi"></a></li>
-                        <li><a href="#img2"><img src="ASSETS/MULTIMEDIA/IMAGENES/FUNKOS/DragonBall/chichi-2.jpg" alt="Chichi"></a></li>
-                        <li><a href="#img3"><img src="ASSETS/MULTIMEDIA/IMAGENES/FUNKOS/DragonBall/chichi.jpg" alt="Chichi"></a></li>
-                    </ul>	
-                    
-                    <div class="modal" id="img1">
-                        <h3>&nbsp;</h3>
-                        <div class="imagen">
-                            <a href="#img3">&#60;</a>
-                            <a href="#img1"><img src="ASSETS/MULTIMEDIA/IMAGENES/FUNKOS/DragonBall/chichi.png" alt="Chichi"></a>
-                            <a href="#img2">></a>
-                        </div>
-                        <a class="cerrar" href="#galeria">X</a>
+            <div class="imagenes" id="galeria">
+                <ul class="galeria">
+                    <li><a href="#img1"><img src="ASSETS/MULTIMEDIA/IMAGENES/FUNKOS/DragonBall/chichi.png"
+                                alt="Chichi"></a></li>
+                    <li><a href="#img2"><img src="ASSETS/MULTIMEDIA/IMAGENES/FUNKOS/DragonBall/chichi-2.jpg"
+                                alt="Chichi"></a></li>
+                    <li><a href="#img3"><img src="ASSETS/MULTIMEDIA/IMAGENES/FUNKOS/DragonBall/chichi.jpg"
+                                alt="Chichi"></a></li>
+                </ul>
+
+                <div class="modal" id="img1">
+                    <h3>&nbsp;</h3>
+                    <div class="imagen">
+                        <a href="#img3">&#60;</a>
+                        <a href="#img1"><img src="ASSETS/MULTIMEDIA/IMAGENES/FUNKOS/DragonBall/chichi.png"
+                                alt="Chichi"></a>
+                        <a href="#img2">></a>
                     </div>
-                    
-                    <div class="modal" id="img2">
-                        <h3>&nbsp;</h3>
-                        <div class="imagen">
-                            <a href="#img1">&#60;</a>
-                            <a href="#img2"><img src="ASSETS/MULTIMEDIA/IMAGENES/FUNKOS/DragonBall/chichi-2.jpg" alt="Chichi"></a>
-                            <a href="#img3">></a>
-                        </div>
-                        <a class="cerrar" href="#galeria">X</a>
-                    </div>
-                    
-                    <div class="modal" id="img3">
-                        <h3>&nbsp;</h3>
-                        <div class="imagen">
-                            <a href="#img2">&#60;</a>
-                            <a href="#img3"><img src="ASSETS/MULTIMEDIA/IMAGENES/FUNKOS/DragonBall/chichi.jpg" alt="Chichi"></a>
-                            <a href="#img1">></a>
-                        </div>
-                        <a class="cerrar" href="#galeria">X</a>
-                    </div>
+                    <a class="cerrar" href="#galeria">X</a>
                 </div>
+
+                <div class="modal" id="img2">
+                    <h3>&nbsp;</h3>
+                    <div class="imagen">
+                        <a href="#img1">&#60;</a>
+                        <a href="#img2"><img src="ASSETS/MULTIMEDIA/IMAGENES/FUNKOS/DragonBall/chichi-2.jpg"
+                                alt="Chichi"></a>
+                        <a href="#img3">></a>
+                    </div>
+                    <a class="cerrar" href="#galeria">X</a>
+                </div>
+
+                <div class="modal" id="img3">
+                    <h3>&nbsp;</h3>
+                    <div class="imagen">
+                        <a href="#img2">&#60;</a>
+                        <a href="#img3"><img src="ASSETS/MULTIMEDIA/IMAGENES/FUNKOS/DragonBall/chichi.jpg"
+                                alt="Chichi"></a>
+                        <a href="#img1">></a>
+                    </div>
+                    <a class="cerrar" href="#galeria">X</a>
+                </div>
+            </div>
             <div class="info">
                 <h2>Funko de Dragon Ball: Chichi</h2>
                 <ul>
@@ -115,7 +137,8 @@
                     </li>
                     <li>
                         <p class="cantidad">¿Cuántos deseas comprar?
-                            <br /><input type="number" name="cantidad" id="cantidad" value="1" min="1" max="10" step="1" required>
+                            <br /><input type="number" name="cantidad" id="cantidad" value="1" min="1" max="10" step="1"
+                                required>
                         </p>
                     </li>
                     <li>
@@ -184,32 +207,7 @@
             </div>
         </footer>
     </div>
-    
-<script>
 
-$(function(){
-$(".slides").slidesjs({
-play: {
-  active: true,
-    // [boolean] Generate the play and stop buttons.
-    // You cannot use your own buttons. Sorry.
-  effect: "slide",
-    // [string] Can be either "slide" or "fade".
-  interval: 3000,
-    // [number] Time spent on each slide in milliseconds.
-  auto: true,
-    // [boolean] Start playing the slideshow on load.
-  swap: true,
-    // [boolean] show/hide stop and play buttons
-  pauseOnHover: false,
-    // [boolean] pause a playing slideshow on hover
-  restartDelay: 2500
-    // [number] restart delay on inactive slideshow
-}
-});
-});
-
-</script>
 </body>
 
 </html>

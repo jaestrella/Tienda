@@ -1,5 +1,5 @@
-/*---------- MEDIA QUERIES -------------*/
-@media screen and (max-width: 800px) {
+/*---------- MEDIA QUERIES - MOVIL -------------*/
+@media screen and (max-width: 660px) {
     .contenedor {
         flex-direction: column;
     }
@@ -13,12 +13,22 @@
         margin: 20px 0;
     }
 
+    /*Colocar iconos de acceso-login y carrito al mismo nivle:*/
+
+
     header nav li {
         width: 100%;
         flex-direction: column;
     }
+    /*No interesa que aparezca el submenu en formato móvil*/
+    header li ul {
+        display:none!important;
+    }
 
     footer {
         height:auto;
+    }
+    footer .copyright {
+        text-align: center;
     }
 }

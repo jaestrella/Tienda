@@ -1,0 +1,15 @@
+/*---------- MEDIA QUERIES - TABLET -------------*/
+@media screen and (min-width: 660px) and (max-width: 980px) {
+    .contenedor {
+        flex-direction: row;
+    }
+    header {
+        flex-direction: column;
+        padding: 0;
+    }
+    /*No interesa que aparezca el submenu en formato tablet*/
+    header li ul {
+        display:none!important;
+    }
+
+}
