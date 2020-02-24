@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description"
+        content="Tienda web para venta de Funkos. Realizada como trabajo para 2º CFGS DAW IES Virgen del Carmen" />
+    <meta name="keywords" content="funko, marvel, juego de tronos, got, dc, dragon ball, comic, merchandising" />
+    <meta name="author"
+        content="Jesús Escabias Martínez, José Antonio Estrella Fernández y Antonio Rodríguez González" />
+    <meta name="copyright"
+        content="Jesús Escabias Martínez, José Antonio Estrella Fernández y Antonio Rodríguez González" />
+    <meta http-equiv="expires" content="Sun, 01 March 2020 00:00:00 GMT" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Funko Iron Man - FunkoShop</title>
+    <link rel="stylesheet" type="text/css" href="ASSETS/CSS/reset.css">
+    <link rel="stylesheet" type="text/css" href="ASSETS/CSS/general.css">
+    <link rel="stylesheet" type="text/css" href="ASSETS/CSS/producto.css">
+    <link rel="stylesheet" type="text/css" href="ASSETS/CSS/slide.css">
+    <link rel="stylesheet" type="text/css" href="ASSETS/CSS/media_queries/mobile_general.css">
+    <link rel="stylesheet" type="text/css" href="ASSETS/CSS/media_queries/mobile_producto.css">
+</head>
+
+<body>
+    <div class="contenedor">
+        <header>
+            <div class="div-logo">
+                <a href="index.html"><img src="ASSETS\MULTIMEDIA\IMAGENES\LOGO\logo_tienda_negro_redim.svg" class="logo"
+                        alt="Logo"></a>
+            </div>
+            <div class="busqueda">
+                <form action="">
+                    <input type="text" placeholder="Busqueda sobre funkos..." class="texto" />
+                    <input type="button" name="buscar" value="     Buscar" class="search" />
+                </form>
+            </div>
+            <div class="acceso" id="propiedades">
+                <a href="acceso.html">
+                    <img src="ASSETS\MULTIMEDIA\IMAGENES\acceso.png" alt="Acceso" />
+                </a>
+            </div>
+
+            <div class="carrito" id="propiedades">
+                <a href="carrito.html">
+                    <img src="ASSETS\MULTIMEDIA\IMAGENES\carro-de-la-compra.png" alt="Carrito" />
+                </a>
+            </div>
+
+            <nav class="menu" id="menu">
+                <ul>
+                    <li><a href="categorias.html" id="categorias" rel="noopener noreferrer">CATEGORIAS</a>
+                        <ul>
+                            <li><a href="categoria_marvel.html" rel="noopener noreferrer">MARVEL</a></li>
+                            <li><a href="categoria_dc.html" rel="noopener noreferrer">DC</a></li>
+                            <li><a href="categoria_GoT.html" rel="noopener noreferrer">JUEGO DE
+                                    TRONOS</a></li>
+                            <li><a href="categoria_dragonball.html" rel="noopener noreferrer">DRAGON BALL</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="categorias.html" rel="noopener noreferrer">TOP VENTAS</a></li>
+                    <li><a href="productos.html" rel="noopener noreferrer">NOVEDADES</a></li>
+                    <li><a href="productos.html" rel="noopener noreferrer">OFERTAS</a></li>
+                    <li><a href="#" rel="noopener noreferrer">EN STOCK</a></li>
+                    <li><a href="#" rel="noopener noreferrer">VIP</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div class="imagenes" id="galeria">
+                <ul class="galeria">
+                    <li><a href="#img1"><img src="ASSETS/MULTIMEDIA/IMAGENES/FUNKOS/MARVEL/ironman.jpg"
+                                alt="Iron Man"></a></li>
+                    <li><a href="#img2"><img src="ASSETS/MULTIMEDIA/IMAGENES/FUNKOS/MARVEL/ironman2.jpeg"
+                                alt="Iron Man"></a></li>
+                    <li><a href="#img3"><img src="ASSETS/MULTIMEDIA/IMAGENES/FUNKOS/MARVEL/ironman3.jpg"
+                                alt="Iron Man"></a></li>
+                </ul>
+
+                <div class="modal" id="img1">
+                    <h3>&nbsp;</h3>
+                    <div class="imagen">
+                        <a href="#img3">&#60;</a>
+                        <a href="#img1"><img src="ASSETS/MULTIMEDIA/IMAGENES/FUNKOS/MARVEL/ironman.jpg"
+                                alt="Iron Man"></a>
+                        <a href="#img2">></a>
+                    </div>
+                    <a class="cerrar" href="#galeria">X</a>
+                </div>
+
+                <div class="modal" id="img2">
+                    <h3>&nbsp;</h3>
+                    <div class="imagen">
+                        <a href="#img1">&#60;</a>
+                        <a href="#img2"><img src="ASSETS/MULTIMEDIA/IMAGENES/FUNKOS/MARVEL/ironman2.jpeg"
+                                alt="Iron Man"></a>
+                        <a href="#img3">></a>
+                    </div>
+                    <a class="cerrar" href="#galeria">X</a>
+                </div>
+
+                <div class="modal" id="img3">
+                    <h3>&nbsp;</h3>
+                    <div class="imagen">
+                        <a href="#img2">&#60;</a>
+                        <a href="#img3"><img src="ASSETS/MULTIMEDIA/IMAGENES/FUNKOS/MARVEL/ironman3.jpg"
+                                alt="Iron Man"></a>
+                        <a href="#img1">></a>
+                    </div>
+                    <a class="cerrar" href="#galeria">X</a>
+                </div>
+            </div>
+            <div class="info">
+                <h2>Funko de MARVEL: Iron Man</h2>
+                <ul>
+                    <li>
+                        <p class="descripcion">Funko de MARVEL, del personaje Iron Man, con un tamaño de 16 x
+                            12 x 9 cms. </p>
+                    </li>
+                    <li>
+                        <p class="cantidad">¿Cuántos deseas comprar?
+                            <br /><input type="number" name="cantidad" id="cantidad" value="1" min="1" max="10" step="1"
+                                required>
+                        </p>
+                    </li>
+                    <li>
+                        <p class="precio">15 €</p>
+                    </li>
+                    <li>
+                        <p class="botones"><a href="#">Comprar</a><a href="index.html">Cancelar</a></p>
+                    </li>
+                </ul>
+            </div>
+        </main>
+
+        <aside>
+            <div class="comentarios">
+                <img src="ASSETS/MULTIMEDIA/IMAGENES/persona1.jpg" alt="Persona">
+                <h3>Verónica ha comentado:</h3>
+                <p>
+                    Los mejores Funkos!
+                </p>
+            </div>
+            <div class="comentarios">
+                <img src="ASSETS/MULTIMEDIA/IMAGENES/persona2.jpg" alt="Persona">
+                <h3>Raúl ha comentado:</h3>
+                <p>
+                    Precio insuperable, vaya ofertas!
+                </p>
+            </div>
+            <div class="comentarios">
+                <img src="ASSETS/MULTIMEDIA/IMAGENES/personas.jpg" alt="Persona">
+                <h3>Fátima ha comentado:</h3>
+                <p>
+                    Aproveché la oferta 2x1 y ahora estoy encantado
+                </p>
+            </div>
+        </aside>
+
+        <footer>
+            <div class="info-pagina">
+                <p>Ayuda e información</p>
+                <ul>
+                    <li>-<a href="politica-privacidad.html" target="_blank" rel="noopener noreferrer">Política de
+                            privacidad</a></li>
+                    <li>-<a href="politica-datos.html" target="_blank" rel="noopener noreferrer">Política de protección
+                            de
+                            datos y condiciones de uso</a></li>
+                    <li>-<a href="contacto.html" target="_blank" rel="noopener noreferrer">Página de contacto</a></li>
+                </ul>
+            </div>
+            <div class="social">
+                <a href="https://facebook.com" rel="noopener noreferrer"><img
+                        src="ASSETS/MULTIMEDIA/IMAGENES/facebook.png" alt="Facebook"></a>
+                <a href="https://twitter.com" rel="noopener noreferrer"><img
+                        src="ASSETS/MULTIMEDIA/IMAGENES/twitter.png" alt="Twitter"></a>
+                <a href="https://instagram.com" rel="noopener noreferrer"><img
+                        src="ASSETS/MULTIMEDIA/IMAGENES/instagram.png" alt="Instagram"></a>
+            </div>
+            <div class="info-pago">
+                <ul>
+                    <li><img src="ASSETS/MULTIMEDIA/IMAGENES/tarjeta-mastercard.png" alt="Mastercard"></li>
+                    <li><img src="ASSETS/MULTIMEDIA/IMAGENES/visa.png" alt="Visa"></li>
+                    <li><img src="ASSETS/MULTIMEDIA/IMAGENES/paypal.png" alt="Paypal"></li>
+                </ul>
+            </div>
+            <div class="copyright">
+                <p>2020 © The FunkoShop SL. Creada por estudiantes de 2º DAW.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+
+        $(function () {
+            $(".slides").slidesjs({
+                play: {
+                    active: true,
+                    // [boolean] Generate the play and stop buttons.
+                    // You cannot use your own buttons. Sorry.
+                    effect: "slide",
+                    // [string] Can be either "slide" or "fade".
+                    interval: 3000,
+                    // [number] Time spent on each slide in milliseconds.
+                    auto: true,
+                    // [boolean] Start playing the slideshow on load.
+                    swap: true,
+                    // [boolean] show/hide stop and play buttons
+                    pauseOnHover: false,
+                    // [boolean] pause a playing slideshow on hover
+                    restartDelay: 2500
+                    // [number] restart delay on inactive slideshow
+                }
+            });
+        });
+
+    </script>
+</body>
+
+</html>
