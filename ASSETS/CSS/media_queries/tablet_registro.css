@@ -1,0 +1,12 @@
+@media (min-width:1080px){
+    label[for="cp"]{
+        float:left;
+    }
+    fieldset {
+        width:69%;
+    }
+    input:not(#politica) {
+        width: 50%!important;
+        clear:both;
+    }
+   }

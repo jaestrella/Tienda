@@ -37,7 +37,7 @@
 @media screen and (max-width: 1200px) {
     .galeria {
         display: flex;
-        flex-flow: row-reverse;
+        flex-flow: row;
     }
 
     #galeria {

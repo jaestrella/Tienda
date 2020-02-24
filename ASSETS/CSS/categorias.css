@@ -14,7 +14,7 @@ main {
     margin-bottom: 20px;
     display:flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .dcball div, .marvelgot div {
