@@ -19,13 +19,12 @@
     <link rel="icon" type="image/png" href="ASSETS/MULTIMEDIA/IMAGENES/LOGO/logo_tienda_negro_fav.svg" sizes="64x64">
     <link rel="stylesheet" type="text/css" href="ASSETS/CSS/reset.css">
     <link rel="stylesheet" type="text/css" href="ASSETS/CSS/general.css">
-    <link rel="stylesheet" type="text/css" href="ASSETS/CSS/index.css">
     <link rel="stylesheet" type="text/css" href="ASSETS/CSS/registro.css">
     <link rel="stylesheet" type="text/css" href="ASSETS/CSS/media_queries/mobile_general.css">
     <link rel="stylesheet" type="text/css" href="ASSETS/CSS/media_queries/mobile_registro.css">
     <link rel="stylesheet" type="text/css" href="ASSETS/CSS/media_queries/tablet_general.css">
     <link rel="stylesheet" type="text/css" href="ASSETS/CSS/media_queries/tablet_registro.css">
-    
+
 </head>
 
 <body>
@@ -92,37 +91,48 @@
                 <h2>Registro en FunkoShop</h2>
                 <form action="#" method="POST">
                     <fieldset>
-
-                        <label for="nombre">NOMBRE</label>
-                        <input id="nombre" name="nombre" placeholder="Nombre" />
-
-                        <label for="apellidos">APELLIDOS</label>
-                        <input id="apellidos" name="apellidos" placeholder="Apellidos" />
-
-                        <label for="correo">CORREO</label>
-                        <input id="correo" name="correo" type="email" placeholder="E-mail" />
-
-                        <label for="nacimiento">NACIMIENTO</label>
-                        <input id="nacimiento" name="nacimiento" type="date" placeholder="Fecha Nacimiento" />
-
-                        <label for="direccion">DIRECCION</label>
-                        <input id="direccion" name="direccion" placeholder="Direccion" />
-
-                        <label for="provincia">PROVINCIA</label>
-                        <input id="provincia" name="provincia" placeholder="Provincia" />
-
-                        <label for="localidad">LOCALIDAD</label>
-                        <input id="localidad" name="localidad" placeholder="Localidad" />
-
-                        <label for="cp">CÓDIGO POSTAL</label>
-                        <input id="cp" name="cp" type="number" min="1" max="30001" placeholder="Código postal" />
-
-
-                        <label for="politica">Acepto las políticas de la empresa</label>
-                        <input id="politica" name="politica" type="checkbox" value="" />
-
-                        <input id="boton" name="enviar" type="button" value="Enviar" />
-                        <input id="boton" name="cancelar" type="reset" value="Cancelar" />
+                        <div>
+                            <label for="nombre">NOMBRE</label>
+                            <input id="nombre" name="nombre" placeholder="Nombre" />
+                        </div>
+                        <div>
+                            <label for="apellidos">APELLIDOS</label>
+                            <input id="apellidos" name="apellidos" placeholder="Apellidos" />
+                        </div>
+                        <div>
+                            <label for="correo">CORREO</label>
+                            <input id="correo" name="correo" type="email" placeholder="E-mail" />
+                        </div>
+                        <div>
+                            <label for="nacimiento">NACIMIENTO</label>
+                            <input id="nacimiento" name="nacimiento" type="date" placeholder="Fecha Nacimiento" />
+                        </div>
+                        <div>
+                            <label for="direccion">DIRECCION</label>
+                            <input id="direccion" name="direccion" placeholder="Direccion" />
+                        </div>
+                        <div>
+                            <label for="provincia">PROVINCIA</label>
+                            <input id="provincia" name="provincia" placeholder="Provincia" />
+                        </div>
+                        <div>
+                            <label for="localidad">LOCALIDAD</label>
+                            <input id="localidad" name="localidad" placeholder="Localidad" />
+                        </div>
+                        <div>
+                            <label for="cp">CÓDIGO POSTAL</label>
+                            <input id="cp" name="cp" type="number" placeholder="Código postal" min="01000" max="30001"
+                                placeholder="Código postal" />
+                        </div>
+                        <div class="politica">
+                            <label for="politica">Acepto las <a href="politica-privacidad.html" target="blank"
+                                    rel="noopener noreferrer"></a> políticas de la empresa</label>
+                            <input id="politica" name="politica" type="checkbox" value="" />
+                        </div>
+                        <div class="botones">
+                            <input id="boton" name="enviar" type="button" value="Registrarse" />
+                            <input id="boton" name="cancelar" type="reset" value="Cancelar" />
+                        </div>
                     </fieldset>
                 </form>
             </section>

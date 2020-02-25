@@ -3,28 +3,21 @@
     label[for="nombre"] {
         display:none;
     }
-    label[for="apellidos"] {
-        display:none;
-    }
     label[for="correo"] {
         display:none;
     }
-    label[for="nacimiento"] {
+    label[for="asunto"] {
         display:none;
     }
-    label[for="direccion"] {
+    label[for="mensaje"] {
         display:none;
     }
-    label[for="provincia"] {
-        display:none;
+    fieldset div {
+        max-width: 75%;
     }
-    label[for="localidad"] {
-        display:none;
+    main section input:not(#politica) {
+        width: 90%;
     }
-    label[for="cp"] {
-        display:none;
-    }
-    
 }
 
 @media screen and (max-width: 480px){

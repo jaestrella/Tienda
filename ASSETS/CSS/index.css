@@ -13,7 +13,18 @@ main {
 .ofertas {
     text-align: center;
     margin-bottom: 20px;
+    /*FLEXBOX*/
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
+
+.ventas div, .novedades div,.ofertas div {
+    /*FLEXBOX*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
 
 .video{
     width:100%;
@@ -28,7 +39,7 @@ main {
 .ventas img,
 .novedades img,
 .ofertas img {
-    width: 30%;
+    width: 250px;
     margin: 5px 10px;
 }
 
@@ -42,9 +53,7 @@ main {
     cursor: pointer;
 }
 
-.ventas h2,
-.novedades h2,
-.ofertas h2 {
+main h2 {
     text-align: center;
     background-color: #5499c7;
     color: white;

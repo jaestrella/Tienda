@@ -1,21 +1,27 @@
 @media screen and (min-width: 720px) and (max-width: 1080px){
 
     fieldset {
-        width:69%;
+        width:79%;
     }
     fieldset div {
+        /*FLEXBOX*/
         flex-direction: column;
         justify-content: center;
         flex-grow:1;
     }
 
     fieldset label {
-        width: 25%;
+        width: 30%;
     }
 
     label:last-child(6){
         font-size:30px;
     }
+
+    main section input:not(#politica) {
+        width: 80%;
+    }
+
     .politica {
         /*FLEXBOX*/
         justify-content: left;

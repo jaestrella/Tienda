@@ -1,45 +1,73 @@
-main{
+main {
     width: 100%;
 }
-section{
+
+section {
     width: 50%;
-    margin:auto;
+    margin: 15px auto;
 }
 
-section form{
+section form {
     margin: 0 auto;
-    width:100%;
+    width: 100%;
     margin-bottom: 20px;
     padding: 10px 20px;
     border-radius: 7px;
-    background-color: rgba(10,60,70,0.7);
-    box-sizing:border-box;
-    margin-top:20px;
+    background-color: rgba(10, 60, 70, 0.7);
+    box-sizing: border-box;
+    margin-top: 20px;
     text-align: left;
-   }
+    line-height: 20px;
+}
 
-   main section input:not(#politica,.busqueda){
-    width: 100%;
+section fieldset {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+fieldset div {
+    display: flex;
+    justify-content: left;
+    align-items: baseline;
+}
+
+main section input:not(#politica) {
+    width: 68%;
     margin-bottom: 20px;
     padding: 7px;
-    box-sizing:border-box;
+    box-sizing: border-box;
     font-size: 17px;
     border: none;
-   }
-   
-   section h2{
-    color:black;
+
+}
+
+section h2 {
+    color: black;
     font-weight: bold;
     font-size: 40px;
-    display:inline-block;
+    display: inline-block;
     font-family: monospace;
-   }
-   textarea{
+    text-align: center;
+	background-color: #5499c7;
+	padding: 10px;
+	border-radius: 12px;
+	border: 2px solid #22638c;
+}
+
+section label {
+    width: 16%;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+textarea {
     max-height: 200px;
-    min-height:100px;
-    max-width: 100%;
-   }
-   #boton{
+    min-height: 100px;
+    max-width: 80%;
+}
+
+#boton {
     background-color: #31384A;
     color: #fff;
     padding: 20px;
@@ -48,39 +76,30 @@ section form{
     font-family: monospace;
     font-weight: bolder;
     font-size: 1em;
-   }
-   #boton:hover{
-    cursor:pointer;
-   }
-   
-   @media (max-width:720px){
-   
-    label[for="nombre"] {
-        display:none;
-    }
-    label[for="correo"] {
-        display:none;
-    }
-    label[for="asunto"] {
-        display:none;
-    }
-    label[for="mensaje"] {
-        display:none;
-    }
-    
-    
-   
-   }
+    margin: 5px;
+}
 
-   @media (min-width:1080px){
-    label[for="cp"]{
-        float:left;
-    }
-    fieldset {
-        width:69%;
-    }
-    main input:not(#politica,.busqueda) {
-        width: 50%!important;
-        clear:both;
-    }
-   }
+#boton:hover {
+    cursor: pointer;
+}
+
+.politica {
+    /*FLEXBOX*/
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.politica {
+    /*FLEXBOX*/
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+#politica {
+    margin: 10px;
+}
+
+.politica label {
+    width: 60%;
+}

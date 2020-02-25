@@ -1,5 +1,8 @@
 /*---------- MEDIA QUERIES - MOVIL -------------*/
 @media screen and (max-width: 660px) {
+    .ventas,.novedades,.ofertas {
+        flex-direction: column;
+    }
     .ventas img,
     .novedades img,
     .ofertas img {
