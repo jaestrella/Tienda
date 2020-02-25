@@ -1,6 +1,7 @@
 /*---------- MEDIA QUERIES - TABLET -------------*/
 @media screen and (min-width: 660px) and (max-width: 980px) {
     .marvelgot, .dcball {
+        /*Flexbox*/
         display: flex;
         flex-direction: column;
     }
@@ -9,14 +10,16 @@
         width: 50%;
         margin: 5px;
     }
-    main div .cat {
+    main .cat {
+        /*Flexbox*/
         display: flex;
         flex-direction: row;
     }
     .catdiv1, .catdiv2 {
         width: 100%;
+        /*Flexbox*/
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
     .catdiv1 div, .catdiv2 div {
         flex-direction: column;
