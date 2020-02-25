@@ -309,7 +309,7 @@ input[type=text], input[type=password] {
     border: none;
     color: #000;
 }
-.modal-content h1 {
+.modal-content h2 {
     width: 95%;
     text-align: center;
     background-color: #5499c7;
